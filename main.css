@@ -4,8 +4,8 @@ html {
 
 body {
   height: 100%
-  background: rgb(65,255,187);
-  background: linear-gradient(128deg, rgba(65,255,187,1) 0%, rgba(65,131,255,1) 51%, rgba(0,212,255,1) 100%) fixed;
+  background: rgb(255,248,214);
+  background: linear-gradient(180deg, rgba(255,248,214,1) 0%, rgba(212,226,215,1) 50%, rgba(79,194,255,1) 100%) fixed;
   font-family: arial;
   margin: 0;
   background-repeat: no-repeat;
