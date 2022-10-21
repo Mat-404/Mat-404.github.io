@@ -27,6 +27,14 @@ h2 {
   text-align: center;
 }
 
+.centerText{
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+}
+
 .imageContainer {
   width: 100%;
   padding-top: 43.33%;
