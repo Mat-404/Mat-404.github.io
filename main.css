@@ -28,5 +28,7 @@ h2 {
 }
 
 .image{
+  width: 40%;
+  height: 175px;
   border-radius: 25px;
 }
