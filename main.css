@@ -1,7 +1,11 @@
 body {
+  height: 100%
   background: rgb(65,255,187);
   background: linear-gradient(128deg, rgba(65,255,187,1) 0%, rgba(65,131,255,1) 51%, rgba(0,212,255,1) 100%);
   font-family: arial;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachent: fixed;
 }
 h2 {
   background:#555;
