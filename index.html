@@ -9,6 +9,19 @@
     #div3 {background-color:#888;width:23.33%;margin:0 auto;}
     #gif {float:right;}
     #text {float:left;}
+    
+    /* (A) DISPLAY AS TABLE & TABLE CELLS */
+.table-wrap { display: table; }
+.table-wrap > * { display: table-cell; }
+ 
+/* (B) OPTIONAL COSMETICS */
+.table-wrap { width: 100%; }
+.table-wrap > * {
+  box-sizing: border-box;
+  width: 50%; padding: 10px;
+  background: #e0f8ff;
+}
+    
   </style>
 </head>
 <body data-new-gr-c-s-check-loaded="14.1084.0" data-gr-ext-installed>
@@ -36,18 +49,10 @@
     </h2>
   </div>
   
-  <div id="div2">
-    <a href="https://mat-404.github.io">
-      Home
-    </a>
-  </div>
-  <div id="div3">
-    <a href="projects.html">
-      Projects
-    </a>
-  </div>
-  <div id="div1">
-    Div 3
+  <div class="table-wrap">
+    <div>Home</div>
+    <div>Projects</div>
+    <div>Div 3</div>
   </div>
   
   <div class='parent'>
