@@ -4,8 +4,8 @@ html {
 
 body {
   height: 100%
-  background: rgb(255,248,214);
-  background: linear-gradient(180deg, rgba(255,248,214,1) 0%, rgba(212,226,215,1) 50%, rgba(79,194,255,1) 100%) fixed;
+background: rgb(180,176,195);
+background: linear-gradient(180deg, rgba(180,176,195,1) 0%, rgba(93,172,224,1) 30%, rgba(95,66,196,1) 100%) fixed;
   font-family: arial;
   margin: 0;
   background-repeat: no-repeat;
@@ -13,6 +13,7 @@ body {
 }
 h2 {
   background:#87bdd8;
+  width: 50%;
 }
 
 .center {
