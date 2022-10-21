@@ -7,15 +7,23 @@
     #gif {float:right;}
     #text {float:left;}
     
-    /* (A) DISPLAY AS TABLE & TABLE CELLS */
 .table-wrap { display: table; }
 .table-wrap > * { display: table-cell; }
  
-/* (B) OPTIONAL COSMETICS */
 .table-wrap { width: 100%; }
 .table-wrap > * {
   box-sizing: border-box;
   width: 33.33%; padding: 10px;
+}
+ 
+    
+.pair-wrap { display: table; }
+.pair-wrap > * { display: table-cell; }
+ 
+.pair-wrap { width: 100%; }
+.pair-wrap > * {
+  box-sizing: border-box;
+  width: 50%; padding: 10px;
 }
     
   </style>
@@ -61,14 +69,14 @@
     </div>
   </div>
   
-  <div class='parent'>
-    <div class='child',id="gif">
-        <IMG src="Hellothere.gif">
-    </div>
-    <div class='child',id="text">
+   <div class="pair-wrap">
+     <div class ="center">
+       <IMG src="Hellothere.gif">
+     </div>
+    <div class="center">
       Hi! I am Mathieu, a current Sophomore studying Aerospace Engineering!<br>
       I created this page in order to showcase some of the more technical work I have done!
-    </div>
+     </div>
   </div>
 
   <p>
