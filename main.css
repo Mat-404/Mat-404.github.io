@@ -11,15 +11,15 @@ h2 {
   text-align: center;
 }
 
-.flex-container {
-    display: flex;
+.parent {
+  border: 1px solid black;
+  margin: 1rem;
+  padding: 2rem 2rem;
+  text-align: center;
 }
-
-.flex-child {
-    flex: 1;
-    border: 2px solid yellow;
-}  
-
-.flex-child:first-child {
-    margin-right: 20px;
-} 
+.child {
+  display: inline-block;
+  border: 1px solid red;
+  padding: 1rem 1rem;
+  vertical-align: middle;
+}
