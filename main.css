@@ -8,6 +8,7 @@ h2 {
 
 .center {
   margin: auto;
+  vertical-align: middle;
   text-align: center;
 }
 
