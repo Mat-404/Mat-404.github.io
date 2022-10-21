@@ -1,6 +1,6 @@
 body {
   background: rgb(65,255,187);
-  background: linear-gradient(90deg, rgba(65,255,187,1) 0%, rgba(65,131,255,1) 51%, rgba(0,212,255,1) 100%);
+  background: linear-gradient(128deg, rgba(65,255,187,1) 0%, rgba(65,131,255,1) 51%, rgba(0,212,255,1) 100%);
   font-family: arial;
 }
 h2 {
