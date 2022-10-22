@@ -1,21 +1,8 @@
-*{
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  min-height: 100%
-}
-
 body {
-  height: 100%
-  /*background: rgb(180,176,195);
-  background: linear-gradient(180deg, rgba(180,176,195,1) 0%, rgba(93,172,224,1) 30%, rgba(95,66,196,1) 100%) fixed; */
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
-  height: 100vh;
-  font-family: arial;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
 }
 
 h2 {
