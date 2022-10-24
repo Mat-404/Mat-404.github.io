@@ -30,6 +30,10 @@ body {
   transition: opacity 0.3s;
 }
 
+.header {
+   font-family: Verdana, sans-serif;
+}
+
 .shadGradient.after {
   content: "";
   z-index: -1;
@@ -46,6 +50,10 @@ body {
   padding:20px;
   vertical-align: middle;
   text-align: center;
+}
+
+.button {
+  font-family: Verdana, sans-serif;
 }
 
 .centerText{
