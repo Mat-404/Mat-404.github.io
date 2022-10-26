@@ -30,46 +30,28 @@ body {
 	top:1px;
 }
 
-      
-
-.shadGradient {
-  position: relative;
-  background: #E5F9FF;
-  width: 75%;
-  margin: auto;
-  padding: 20px;
-  border-radius: 25px;
-  font-family: Gill Sans, sans-serif;
+.imageButton {
+  background-image: url("/images/NX-Logo.png");
+	border-radius:6px;
+  background-position: 50% 50%;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	padding:165px 250px;
+}
+.imageButton:hover {
+  background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+	background-color:#f6f6f6;
+}
+.imageButton:active {
+	position:relative;
+	top:1px;
 }
 
-.shadGradient.before {
-  content: "";
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: linear-gradient(to top left, #ff3d00 0%, #0400ff 100% );
-  transform: translate3d(0px, 20px, 0) scale(0.95);
-  filter: blur(20px);
-  opacity: var(0.7);
-  transition: opacity 0.3s;
-}
 
 .header {
    font-family: Verdana, sans-serif;
-}
-
-.shadGradient.after {
-  content: "";
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: inherit;
 }
 
 .center {
