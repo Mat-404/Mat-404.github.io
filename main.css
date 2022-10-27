@@ -38,17 +38,25 @@ body {
 	display:inline-block;
 	cursor:pointer;
 	color:#000000;
-	padding:165px 250px;
+	padding:12.5% 25%;
+  font-size:30px;
 }
 .imageButton:hover {
-  background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
-	background-color:#f6f6f6;
+  background-image: url("/images/NX-Logo-Dark.png");
 }
 .imageButton:active {
 	position:relative;
 	top:1px;
 }
 
+h2 {
+  background-color: white;
+  border-radius: 6px;
+}
+
+.shadGradient {
+ box-shadow: 10px, black;
+}
 
 .header {
    font-family: Verdana, sans-serif;
