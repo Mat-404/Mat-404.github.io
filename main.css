@@ -50,8 +50,8 @@ div {
 .imageButtonNX {
   background-image: url("/images/NX-Logo.png");
   border-radius: 6px;
-  background-position: 50% 50%;
-  border: 1px solid #dcdcdc;
+  background-position: 60% 60%;
+  border: 1px solid #6e6e6e;
   display: inline-block;
   cursor: pointer;
   color: #000000;
@@ -74,7 +74,7 @@ div {
   background-image: url("/images/Blender-Logo.png");
   border-radius: 6px;
   background-position: 50% 50%;
-  border: 1px solid #dcdcdc;
+  border: 1px solid #6e6e6e;
   display: inline-block;
   cursor: pointer;
   color: #000000;
@@ -97,7 +97,7 @@ div {
   background-image: url("/images/Website-Logo.png");
   border-radius: 6px;
   background-position: 50% 50%;
-  border: 1px solid #dcdcdc;
+  border: 1px solid #6e6e6e;
   display: inline-block;
   cursor: pointer;
   color: #000000;
@@ -120,7 +120,7 @@ div {
   background-image: url("/images/Orbit-Logo.png");
   border-radius: 6px;
   background-position: 50% 50%;
-  border: 1px solid #dcdcdc;
+  border: 1px solid #6e6e6e;
   display: inline-block;
   cursor: pointer;
   color: #000000;
@@ -138,6 +138,21 @@ div {
   position: relative;
   top: 1px;
 }
+
+.banner {
+  background-color: #FFFFFF;
+  /*set background width to 100% of the screen*/
+  width: 50%;
+  border-radius: 6px;
+  color: #000000;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+  /*set font to something that looks good*/
+  font-family: Verdana;
+}
+
 
 
 h2 {
