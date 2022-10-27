@@ -9,54 +9,136 @@ body {
 ul {
   list-style-type: none;
 }
+
 /* remove underline from links */
 a {
   text-decoration: none;
 }
 
+/* add shadow to divs 
+div {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+*/
 .button {
-	box-shadow:inset 0px 1px 0px 0px #ffffff;
-	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
-	background-color:#ffffff;
-	border-radius:6px;
-	border:1px solid #dcdcdc;
-	display:inline-block;
-	cursor:pointer;
-	color:#000000;
-	font-family:Verdana;
-	font-size:28px;
-	font-weight:bold;
-	padding:9px 76px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #ffffff;
-}
-.button:hover {
-	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
-	background-color:#f6f6f6;
-}
-.button:active {
-	position:relative;
-	top:1px;
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  background: linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+  background-color: #ffffff;
+  border-radius: 6px;
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  cursor: pointer;
+  color: #000000;
+  font-family: Verdana;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 9px 76px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffffff;
 }
 
-.imageButton {
-  background-image: url("/images/NX-Logo.png");
-	border-radius:6px;
-  background-position: 50% 50%;
-	border:1px solid #dcdcdc;
-	display:inline-block;
-	cursor:pointer;
-	color:#000000;
-	padding:12.5% 25%;
-  font-size:30px;
+.button:hover {
+  background: linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+  background-color: #f6f6f6;
 }
-.imageButton:hover {
+
+.button:active {
+  position: relative;
+  top: 1px;
+}
+
+.imageButtonNX {
+  background-image: url("/images/NX-Logo.png");
+  border-radius: 6px;
+  background-position: 50% 50%;
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  cursor: pointer;
+  color: #000000;
+  font-size: 30px;
+  margin: auto;
+  width: 50%;
+  padding: 110px;
+}
+
+.imageButtonNX:hover {
   background-image: url("/images/NX-Logo-Dark.png");
 }
-.imageButton:active {
-	position:relative;
-	top:1px;
+
+.imageButtonNX:active {
+  position: relative;
+  top: 1px;
 }
+
+.imageButtonBlender {
+  background-image: url("/images/Blender-Logo.png");
+  border-radius: 6px;
+  background-position: 50% 50%;
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  cursor: pointer;
+  color: #000000;
+  font-size: 30px;
+  margin: auto;
+  width: 50%;
+  padding: 110px;
+}
+
+.imageButtonBlender:hover {
+  background-image: url("/images/Blender-Logo-Dark.png");
+}
+
+.imageButtonBlender:active {
+  position: relative;
+  top: 1px;
+}
+
+.imageButtonWebsite {
+  background-image: url("/images/Website-Logo.png");
+  border-radius: 6px;
+  background-position: 50% 50%;
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  cursor: pointer;
+  color: #000000;
+  font-size: 30px;
+  margin: auto;
+  width: 50%;
+  padding: 110px;
+}
+
+.imageButtonWebsite:hover {
+  background-image: url("/images/Website-Logo-Dark.png");
+}
+
+.imageButtonWebsite:active {
+  position: relative;
+  top: 1px;
+}
+
+.imageButtonOrbit {
+  background-image: url("/images/Orbit-Logo.png");
+  border-radius: 6px;
+  background-position: 50% 50%;
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  cursor: pointer;
+  color: #000000;
+  font-size: 30px;
+  margin: auto;
+  width: 50%;
+  padding: 110px;
+}
+
+.imageButtonOrbit:hover {
+  background-image: url("/images/Orbit-Logo-Dark.png");
+}
+
+.imageButtonOrbit:active {
+  position: relative;
+  top: 1px;
+}
+
 
 h2 {
   background-color: white;
@@ -64,16 +146,16 @@ h2 {
 }
 
 .shadGradient {
- box-shadow: 10px, black;
+  box-shadow: 10px, black;
 }
 
 .header {
-   font-family: Verdana, sans-serif;
+  font-family: Verdana, sans-serif;
 }
 
 .center {
   margin: auto;
-  padding:5px;
+  padding: 5px;
   vertical-align: middle;
   text-align: center;
 }
@@ -82,13 +164,13 @@ h2 {
   font-family: Verdana, sans-serif;
 }
 
-.centerText{
+.centerText {
   position: absolute;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-  text-align:center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
 }
 
 .imageContainer {
@@ -106,13 +188,14 @@ h2 {
 
 @keyframes gradient {
   0% {
-	background-position: 0% 50%;
+    background-position: 0% 50%;
   }
+
   50% {
- 	background-position: 100% 50%;
+    background-position: 100% 50%;
   }
+
   100% {
-	background-position: 0% 50%;
+    background-position: 0% 50%;
   }
 }
-
