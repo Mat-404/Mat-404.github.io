@@ -5,6 +5,28 @@ body {
   height: 100vh;
 }
 
+.flex-container {
+  width: 80%;
+  min-height: 300px;
+  margin: 0 auto;
+  display: flex;
+  /* Standard syntax */
+}
+
+.flex-container .column {
+  padding: 10px;
+  -webkit-flex: 1;
+  /* Safari */
+  -ms-flex: 1;
+  /* IE 10 */
+  flex: 1;
+  /* Standard syntax */
+  margin: 30px;
+}
+
+
+
+
 /* remove bullet points from unordered lists */
 ul {
   list-style-type: none;
@@ -49,6 +71,7 @@ div {
   text-decoration: none;
   text-shadow: 0px 1px 0px #ffffff;
 }
+
 .button:hover {
   background: linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
   background-color: #f6f6f6;

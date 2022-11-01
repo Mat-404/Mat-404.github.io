@@ -8,53 +8,6 @@
  <!-- <script type="text/javascript" src="invisibleButtonText.js"></script> -->
  <!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
   
-  
-  <style>
-    #gif {
-      float: right;
-    }
-
-    #text {
-      float: left;
-    }
-
-    .table-wrap {
-      display: table;
-    }
-
-    .table-wrap>* {
-      display: table-cell;
-    }
-
-    .table-wrap {
-      width: 100%;
-    }
-
-    .table-wrap>* {
-      box-sizing: border-box;
-      width: 33.33%;
-      padding: 10px;
-    }
-
-
-    .pair-wrap {
-      display: table;
-    }
-
-    .pair-wrap>* {
-      display: table-cell;
-    }
-
-    .pair-wrap {
-      width: 100%;
-    }
-
-    .pair-wrap>* {
-      box-sizing: border-box;
-      width: 50%;
-      padding: 10px;
-    }
-  </style>
 </head>
 
 </html>
@@ -78,18 +31,18 @@
     Check back later for updates!
   </div>
 
-  <div class="table-wrap">
-    <div class="center">
+  <div class="flex-container center">
+    <div class="column">
       <a href="https://mat-404.github.io" class="button">
         Home
       </a>
     </div>
-    <div class="center">
+    <div class="column">
       <a href="/projects.html" class="button">
         Projects
       </a>
     </div>
-    <div class="center">
+    <div class="column">
       <a href="/about.html" class="button">
         About
       </a>
@@ -103,15 +56,15 @@
     </strong>
   </h1>
 
-  <div class="pair-wrap center">
-    <div>
+  <div class="flex-container">
+    <div class="column">
       <a href="/nxPage.html" class="imageButtonNX">
         <div class="center textOverlay">
           Siemens NX Projects
         </div>
       </a>
     </div>
-    <div>
+    <div class="column">
       <a href="/blender.html" class="imageButtonBlender">
         <div class="center textOverlay">
           Blender Projects
@@ -119,15 +72,15 @@
       </a>
     </div>
   </div>
-  <div class="pair-wrap center">
-    <div>
+  <div class="flex-container">
+    <div class="column">
       <a href="https://github.com/Mat-404/Mat-404.github.io" class="imageButtonWebsite">
         <div class="center textOverlay">
           Github Pages Website
         </div>
       </a>
     </div>
-    <div>
+    <div class="column">
       <a href="/OrbitSim.html" class="imageButtonOrbit">
         <div class="center textOverlay">
           Orbit Simulation with Java
