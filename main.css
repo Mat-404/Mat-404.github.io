@@ -2,7 +2,15 @@ body {
   background: linear-gradient(-45deg, #ffd1b2, #fff9c9, #51bcff, #3900ff);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
-  height: 100vh;
+  height: 100%;
+}
+a:hover{
+  color:rgb(83, 83, 83)
+}
+.h1 {
+  font-size:2rem;
+  font-weight:600;
+  line-height:2rem
 }
 
 .flex-container {
@@ -10,7 +18,20 @@ body {
   min-height: 300px;
   margin: 0 auto;
   display: flex;
-  /* Standard syntax */
+}
+
+.highlight-link{
+  box-shadow:inset 0 -0.125rem 0 #07b0ff;
+  box-sizing:border-box;
+  color:#07b0ff;
+  display:inline-block;
+  padding:0.125rem 0.125rem;
+  transition:all 0.2s ease-in-out
+}
+
+.highlight-link:hover{
+  box-shadow:inset 0 -2rem 0 0 #07b0ff;
+  color:#fff
 }
 
 .flex-container .column {
@@ -109,21 +130,10 @@ body {
   animation-duration: 0.75s;
 }
 
-/* remove bullet points from unordered lists */
-ul {
-  list-style-type: none;
-}
-
 /* remove underline from links */
 a {
   text-decoration: none;
 }
-
-/* add shadow to divs 
-div {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-*/
 
 .conditionalText {
   visibility: hidden;
@@ -310,13 +320,6 @@ h2 {
   padding-top: 43.33%;
   position: relative;
 }
-
-.image {
-  width: 100%;
-  height: 100%;
-  border-radius: 25px;
-}
-
 
 @keyframes gradient {
   0% {
