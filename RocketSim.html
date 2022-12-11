@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" color-mode="dark">
+
+<head>
+    <title>Mathieu Cote's Webpage</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link href="main.css" rel="stylesheet" type="text/css" />
+    <link href="buttonMenu.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div id="bkg">
+        <div id="header" class="center">
+            <h1>
+                Mathieu Cote's Website!
+            </h1>
+        </div>
+    </div>
+    <div class="center shadGradient">
+        <h2>
+            This website is under construction!
+            <br>
+            Check back later for updates!
+        </h2>
+    </div>
+
+    <nav id='menu'>
+        <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+        <ul>
+            <li><a href='/index.html'>Home</a></li>
+            <li><a class='dropdown-arrow' href=''>Projects</a>
+                <ul class='sub-menus'>
+                    <li><a href='https://github.com/Mat-404/Mat-404.github.io'>Personal Website</a></li>
+                    <li><a href='/nxPage.html'>3D Modeling</a></li>
+                    <li><a href='/OrbitSim.html'>Orbit Simulation</a></li>
+                    <li><a href='/RocketSim.html'>Rocket Launch</a></li>
+                </ul>
+            </li>
+            <li><a href='/about.html'>About</a></li>
+        </ul>
+    </nav>
+    <h1 class="center">
+        Model Rocket Simulation
+    </h1>
+    <p class="center">
+        This program was written to simulate the flight of a model rocket. It uses the equations of motion to calculate
+        the position and velocity of the rocket at each time step using an Euler method.
+        This program was written in Python and uses matplotlib as well as PYSimpleGUI to create and display the results.
+        Currently this program displays the trajectory of the rocket, as well as many pertinent values and the projected
+        landing zone.
+    </p>
+
+    <p class="center">
+        The next things I aim to do with this program are to allow for wind to affect the flight path as well as to
+        allow for easier input of the rocket's properties.
+        It has taken a lot of self control to not attempt to write a form of 3d-modeling software to streamline this
+        process.
+    </p>
+
+    <p class="center">
+        This program can be found on my <a href="https://github.com/Mat-404/FTRC-RocketSim" class="highlight-link">GitHub page.</a>
+    </p>
+    <p class="center">
+        Some examples from the program are below:
+    </p>
+
+    <div class="center"><img src="images/RocketGUI.png" alt="RocketGUI" class="center"></div>
+    <div class="center"><img src="images/RocketFig1.png" alt="RocketFig1" class="center"></div>
+    <div class="center"><img src="images/RocketFig2.png" alt="RocketFig2" class="center"></div>
+
+    <div class="center">
+        <p>
+            <strong>All my links:</strong>
+            <br>
+            <a class="highlight-link" href="https://github.com/Mat-404">
+                Github!
+            </a>
+        </p>
+    </div>
+
+</body>
+
+</html>
