@@ -1,14 +1,17 @@
 #menu {
+	position: sticky;
+	top: 0;
 	background: #29C7CC;
 	background: linear-gradient(to bottom,  #0099CC,  #FFF7AB);
 	color: #FFF;
 	height: 56px;
-	width: 50%;
+	width: 75%;
 	margin: 0 auto;
 	padding-left: 18px;
 	border-radius: 6px;
 	border: 4px ridge #ABABAB;
     margin-bottom: 20px;
+	z-index: 10;
 }
 #menu ul, #menu li {
 	margin: 0 auto;

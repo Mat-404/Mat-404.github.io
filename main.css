@@ -9,6 +9,13 @@ body {
 a:hover{
   color:rgb(83, 83, 83)
 }
+@font-face {
+  font-family: "Kirilian-Bold";
+  src: url(/fonts/Kirlian-Bold.otf) format("otf");
+}
+.underline {
+  text-decoration: underline;
+}
 
 .table-wrap>* {
   display: table-cell;
