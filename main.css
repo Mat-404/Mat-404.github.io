@@ -2,21 +2,13 @@ body {
   background: linear-gradient(-45deg, #ffd1b2, #fff9c9, #51bcff, #3900ff);
   background-repeat: repeat;
   background-size: 100% 900%;
-  animation: gradient 15s ease infinite;
+  animation: gradient 10s ease infinite;
   height: 100%;
   overflow: hidden;
   overflow-x: hidden;
 }
 a:hover{
   color:rgb(83, 83, 83)
-}
-
-@font-face {
-  font-family: "Kirilian-Bold";
-  src: url(/fonts/Kirlian-Bold.otf) format("otf");
-}
-.underline {
-  text-decoration: underline;
 }
 
 .table-wrap>* {
@@ -39,16 +31,13 @@ a:hover{
   font-weight: 600;
   font-size: 2em;
   background-size: cover;
-  background-color: aliceblue;
+  background-color: rgb(173, 173, 173);
 }
 
 .Landing{
   position: sticky;	top: 0;
   z-index: 35;
-}
-
-.buttonContainer {
-  text-align: center; /* Center the text within the div element */
+  background-size: cover;
 }
 
 .flex-container {
@@ -78,7 +67,6 @@ a:hover{
   border-radius: 6px;
 }
 
-/* remove underline from links */
 a {
   text-decoration: none;
 }
@@ -103,7 +91,6 @@ a {
 
 .banner {
   background-color: #FFFFFF;
-  /*set background width to 100% of the screen*/
   width: 50%;
   border-radius: 6px;
   color: #000000;
@@ -123,15 +110,6 @@ a {
 
 .center {
   margin: auto;
-  text-align: center;
-}
-
-.centerText {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   text-align: center;
 }
 
