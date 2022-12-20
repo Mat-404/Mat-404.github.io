@@ -1,48 +1,67 @@
 <!DOCTYPE html>
 <html lang="en" color-mode="dark">
+
 <head>
   <title>Mathieu Cote's Webpage</title>
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
   <link href="main.css" rel="stylesheet" type="text/css" />
   <link href="slideShow.css" rel="stylesheet" type="text/css" />
   <link href="buttonMenu.css" rel="stylesheet" type="text/css" />
+  <link href="loadingScreen.css" rel="stylesheet" type="text/css" />
 </head>
-
+<script>
+  $(window).on("load", function () {
+    $(".loader-wrapper").fadeOut("slow");
+    document.body.style.overflow = "visible";
+    document.body.style.overflowX = "hidden";
+  });
+</script>
 <body>
-     <div id="bkg">
-     <div id="header" class="center">
-       <h1>
-         Mathieu Cote's Website!
-       </h1>
-      </div>
+  <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
   </div>
-  
-  <nav id='menu'>
-    <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
-    <ul>
-      <li><a href='/index.html'>Home</a></li>
-      <li><a class='dropdown-arrow' href=''>Projects</a>
-        <ul class='sub-menus'>
-          <li><a href='https://github.com/Mat-404/Mat-404.github.io'>Personal Website</a></li>
-          <li><a href='/nxPage.html'>3D Modeling</a></li>
-          <li><a href='/OrbitSim.html'>Orbit Simulation</a></li>
-          <li><a href='/RocketSim.html'>Rocket Launch</a></li>
-        </ul>
-      </li>
-      <li><a href='/about.html'>About</a></li>
-    </ul>
-  </nav>
-  <h1 class="center">
+  <div class="Landing">
+    <div class="websiteTitle center">
+      <div style="padding:20px;">
+        Mathieu Cote's Website!
+      </div>
+
+    </div>
+
+    <nav id='menu'>
+      <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+      <ul>
+        <li><a href='/index.html'>Home</a></li>
+        <li><a class='dropdown-arrow' href=''>Projects</a>
+          <ul class='sub-menus'>
+            <li><a href='/index.html'>Personal Website</a></li>
+            <li><a href='/nxPage.html'>3D Modeling</a></li>
+            <li><a href='/OrbitSim.html'>Orbit Simulation</a></li>
+            <li><a href='/RocketSim.html'>Rocket Launch</a></li>
+          </ul>
+        </li>
+        <li><a href='/about.html'>About</a></li>
+      </ul>
+    </nav>
+  </div>
+  <h1 class="center" style="margin-top: 80px;">
     Orbit Simulation Project:
   </h1>
   <p class="center">
-    This is a project I worked on in the Fall of 2022 which aimed to simulate the motion of celestial bodies relative to each other.
-    The program uses a pre-made graphical interface called Plot.java, which is adapted from an online resource I found exploring simulations in Java.
-    The program uses a very simple methodic approach to calculating the motion of the celestial bodies, which is based on Newton's laws of motion.
-    This was done in place of a more complex approach such as using the Runge-Kutta method, which is a more accurate method of calculating the motion of celestial bodies.
-    The reason for this was to keep the program simple and easy to understand, as well as to keep the program running at a reasonable speed.
-    The other main reason to do this is because I wanted to make it so if there were an object in a very eccentric orbit, it would be able to affect the others' paths
-    without needing to calculate a parameterized path, and perform several derivatives, which in my opinion would be extraordinatily time-consuming.
+    This is a project I worked on in the Fall of 2022 which aimed to simulate the motion of celestial bodies relative to
+    each other.
+    The program uses a pre-made graphical interface called Plot.java, which is adapted from an online resource I found
+    exploring simulations in Java.
+    The program uses a very simple methodic approach to calculating the motion of the celestial bodies, which is based
+    on Newton's laws of motion.
+    This was done in place of a more complex approach such as using the Runge-Kutta method, which is a more accurate
+    method of calculating the motion of celestial bodies.
+    The reason for this was to keep the program simple and easy to understand, as well as to keep the program running at
+    a reasonable speed.
+    The other main reason to do this is because I wanted to make it so if there were an object in a very eccentric
+    orbit, it would be able to affect the others' paths
+    without needing to calculate a parameterized path, and perform several derivatives, which in my opinion would be
+    extraordinatily time-consuming.
   </p>
   <div class="center">
     <img src="/images/OrbitSim.png" alt="Orbit Simulation">
@@ -53,7 +72,7 @@
 
 
 
-  
+
   <div class="center">
     <p>
       <strong>All my links:</strong>
@@ -63,7 +82,7 @@
       </a>
     </p>
   </div>
-  
+
 </body>
 
 

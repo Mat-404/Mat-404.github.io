@@ -6,33 +6,44 @@
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link href="main.css" rel="stylesheet" type="text/css" />
     <link href="buttonMenu.css" rel="stylesheet" type="text/css" />
+      <link href="loadingScreen.css" rel="stylesheet" type="text/css" />
 </head>
-
+<script>
+    $(window).on("load", function () {
+      $(".loader-wrapper").fadeOut("slow");
+      document.body.style.overflow = "visible";
+      document.body.style.overflowX = "hidden";
+    });
+  </script>
 <body>
-    <div id="bkg">
-        <div id="header" class="center">
-            <h1>
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+      </div>
+    <div class="Landing">
+        <div class="websiteTitle center">
+            <div style="padding:20px;">
                 Mathieu Cote's Website!
-            </h1>
+            </div>
         </div>
+
+        <nav id='menu'>
+            <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+            <ul>
+                <li><a href='/index.html'>Home</a></li>
+                <li><a class='dropdown-arrow' href=''>Projects</a>
+                    <ul class='sub-menus'>
+                        <li><a href='/index.html'>Personal Website</a></li>
+                        <li><a href='/nxPage.html'>3D Modeling</a></li>
+                        <li><a href='/OrbitSim.html'>Orbit Simulation</a></li>
+                        <li><a href='/RocketSim.html'>Rocket Launch</a></li>
+                    </ul>
+                </li>
+                <li><a href='/about.html'>About</a></li>
+            </ul>
+        </nav>
     </div>
 
-    <nav id='menu'>
-        <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
-        <ul>
-            <li><a href='/index.html'>Home</a></li>
-            <li><a class='dropdown-arrow' href=''>Projects</a>
-                <ul class='sub-menus'>
-                    <li><a href='https://github.com/Mat-404/Mat-404.github.io'>Personal Website</a></li>
-                    <li><a href='/nxPage.html'>3D Modeling</a></li>
-                    <li><a href='/OrbitSim.html'>Orbit Simulation</a></li>
-                    <li><a href='/RocketSim.html'>Rocket Launch</a></li>
-                </ul>
-            </li>
-            <li><a href='/about.html'>About</a></li>
-        </ul>
-    </nav>
-    <h1 class="center">
+    <h1 class="center" style="margin-top: 80px;">
         Model Rocket Simulation
     </h1>
     <p class="center">
@@ -51,7 +62,8 @@
     </p>
 
     <p class="center">
-        This program can be found on my <a href="https://github.com/Mat-404/FTRC-RocketSim" class="highlight-link">GitHub page.</a>
+        This program can be found on my <a href="https://github.com/Mat-404/FTRC-RocketSim"
+            class="highlight-link">GitHub page.</a>
     </p>
     <p class="center">
         Some examples from the program are below:

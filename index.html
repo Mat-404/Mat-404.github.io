@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" color-mode="dark">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 
 <head>
   <title>Mathieu Cote's Webpage</title>
@@ -7,32 +9,48 @@
   <link href="main.css" rel="stylesheet" type="text/css" />
   <link href="slideShow.css" rel="stylesheet" type="text/css" />
   <link href="buttonMenu.css" rel="stylesheet" type="text/css" />
+  <link href="loadingScreen.css" rel="stylesheet" type="text/css" />
 </head>
+<script>
+  $(window).on("load", function () {
+    $(".loader-wrapper").fadeOut("slow");
+    document.body.style.overflow = "visible";
+    document.body.style.overflowX = "hidden";
+  });
+</script>
 
 <body>
 
-  <div style="font-family: Kirilian-Bold;" class="websiteTitle">
-    Mathieu Cote's Website!
+  <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
   </div>
 
-  <nav id='menu'>
-    <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
-    <ul>
-      <li><a href='/index.html'>Home</a></li>
-      <li><a class='dropdown-arrow' href=''>Projects</a>
-        <ul class='sub-menus'>
-          <li><a href='/index.html'>Personal Website</a></li>
-          <li><a href='/nxPage.html'>3D Modeling</a></li>
-          <li><a href='/OrbitSim.html'>Orbit Simulation</a></li>
-          <li><a href='/RocketSim.html'>Rocket Launch</a></li>
-        </ul>
-      </li>
-      <li><a href='/about.html'>About</a></li>
-    </ul>
-  </nav>
+  <div class="Landing">
+    <div class="websiteTitle center" style="padding:20px;">
+      Mathieu Cote's Website!
+    </div>
 
-  <div class="center">
-    <img src="https://media.giphy.com/media/xTiIzJSKB4l7xTouE8/giphy.gif" width="480" height="208" class="image">
+    <nav id='menu'>
+      <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+      <ul>
+        <li><a href='/index.html'>Home</a></li>
+        <li><a class='dropdown-arrow' href=''>Projects</a>
+          <ul class='sub-menus'>
+            <li><a href='/index.html'>Personal Website</a></li>
+            <li><a href='/nxPage.html'>3D Modeling</a></li>
+            <li><a href='/OrbitSim.html'>Orbit Simulation</a></li>
+            <li><a href='/RocketSim.html'>Rocket Launch</a></li>
+          </ul>
+        </li>
+        <li><a href='/about.html'>About</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div style="margin-top: 80px;">
+    <div class="center">
+      <img src="https://media.giphy.com/media/xTiIzJSKB4l7xTouE8/giphy.gif" width="480" height="208" class="image">
+    </div>
   </div>
   <h2 class="banner">
     Hi! I am Mathieu, a current Junior studying Aerospace Engineering!<br>
@@ -50,8 +68,9 @@
   <div class="center">
     <img src="/images/ArtemisLandingPictures/Artemis1Landing.png" style="width:600px; height:400px; border-radius: 6px;"
       class="active">
-    <div style="position: absolute; bottom: -150px;text-align: right;">
-      Credit: NASA
+    <div>
+      Credit: <a class="highlight-link"
+        href="https://www.nasa.gov/press-release/splashdown-nasa-s-orion-returns-to-earth-after-historic-moon-mission">NASA</a>
     </div>
   </div>
 
@@ -77,11 +96,6 @@
     <img src="/images/FalconHeavyLaunchPictures/S1370014.JPG" style="width:100%">
   </div>
   <script src="slideshow.js"></script>
-
-  <h2 class="banner">
-    Some pictures taken at the launch of the Falcon Heavy!
-  </h2>
-
 
   <div class="center">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/v-QEfWbP4UI" title="YouTube video player"

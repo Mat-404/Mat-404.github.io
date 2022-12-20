@@ -4,11 +4,13 @@ body {
   background-size: 100% 900%;
   animation: gradient 15s ease infinite;
   height: 100%;
-  
+  overflow: hidden;
+  overflow-x: hidden;
 }
 a:hover{
   color:rgb(83, 83, 83)
 }
+
 @font-face {
   font-family: "Kirilian-Bold";
   src: url(/fonts/Kirlian-Bold.otf) format("otf");
@@ -33,11 +35,16 @@ a:hover{
 
 .websiteTitle{
   position:relative;
-  margin:auto;
-  margin-bottom: 20px;
-  width:350px;
+  width:100%;
   font-weight: 600;
   font-size: 2em;
+  background-size: cover;
+  background-color: aliceblue;
+}
+
+.Landing{
+  position: sticky;	top: 0;
+  z-index: 35;
 }
 
 .buttonContainer {
@@ -117,7 +124,6 @@ a {
 .center {
   margin: auto;
   text-align: center;
-  margin-bottom: 20px;
 }
 
 .centerText {
