@@ -1,14 +1,21 @@
 body {
-  background: linear-gradient(-45deg, #ffd1b2, #fff9c9, #51bcff, #3900ff);
+  background: linear-gradient(-45deg, #ffd1b2, #9cd7c8, #518bff, #3900ff);
   background-repeat: repeat;
   background-size: 100% 900%;
   animation: gradient 10s ease infinite;
   height: 100%;
   overflow: hidden;
   overflow-x: hidden;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 a:hover{
   color:rgb(83, 83, 83)
+}
+
+@font-face {
+  font-family: Ailerons;
+  src: url("/fonts/Ailerons.otf") format("opentype"); ;
 }
 
 .table-wrap>* {
@@ -26,18 +33,20 @@ a:hover{
 }
 
 .websiteTitle{
+  font-family: 'Ailerons', sans-serif;
   position:relative;
   width:100%;
   font-weight: 600;
-  font-size: 2em;
+  font-size: 5em;
   background-size: cover;
   background-color: rgb(173, 173, 173);
+  margin: 0 !important;
 }
 
 .Landing{
-  position: sticky;	top: 0;
   z-index: 35;
   background-size: cover;
+  margin: 0 !important;
 }
 
 .flex-container {
@@ -83,12 +92,6 @@ a {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.button {
-  display: inline-block; /* Make the button elements appear inline */
-  width: 23.33%; /* Set the width to be one-third of the container */
-  margin: 1px; /* Add a 1% margin around the button elements */
-}
-
 .banner {
   background-color: #FFFFFF;
   width: 50%;
@@ -98,7 +101,6 @@ a {
   font-size: 20px;
   padding: 10px;
   text-align: center;
-  font-family: Verdana;
   margin:auto;
   margin-bottom: 20px;
   margin-top:20px;
