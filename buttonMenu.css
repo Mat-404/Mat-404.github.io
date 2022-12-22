@@ -48,6 +48,9 @@ display: block;
 #menu ul.sub-menus {
 position: absolute;
 display: none;
+border-bottom-left-radius: 6px;
+border-bottom-right-radius: 6px;
+border-top-right-radius: 6px;
 }
 
 #menu a {
@@ -103,7 +106,7 @@ text-align: center;
 
 #menu ul.sub-menus li {
 display: block;
-width: 100%;
+width: 96%;
 text-align: center;
 }
 
