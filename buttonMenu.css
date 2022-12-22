@@ -14,8 +14,7 @@ width: 100%;
 #menu {
 position: absolute;
 font-family: 'Ailerons', sans-serif;
-background: #29c7cc;
-background: linear-gradient(to bottom, rgb(26, 141, 255), #abc7ff);
+background: linear-gradient(to top, #1C2541, #5DB7DE);
 color: rgb(102, 102, 102);
 border-radius: 6px;
 border: 4px ridge #ababab;
@@ -66,10 +65,11 @@ margin-left: 5px;
 }
 
 #menu li a:hover {
-color: #09c;
-background: #d4d4d4;
-opacity: .5;
+color: #5DB7DE;
+background: #5a5a5a;
+opacity: .9;
 border-radius: 6px;
+box-shadow: #444 0 0 10px 0;
 }
 
 #menu input {
