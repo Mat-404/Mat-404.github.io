@@ -45,6 +45,12 @@ body {
   background-size: cover;
   margin: 0 !important;
 }
+.fromFlorida{
+  background-color: #CCFFCB;
+}
+.notfromFlorida{
+  background-color: #abd8aa;
+}
 
 .flexContainer{
   display: flex;
