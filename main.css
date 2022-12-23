@@ -39,7 +39,6 @@ body {
   background-color: #CCFFCB;
   margin: 0 !important;
 }
-
 .Landing{
   z-index: 35;
   background-size: cover;
@@ -56,8 +55,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: flex-start;
-  align-content: center;
+  align-items: center;
 }
 .projectNewsContainer{
   flex:2;
@@ -65,9 +63,15 @@ body {
   background-color: #87c0e9;
   box-shadow: rgba(50, 50, 50, 0.5) 10px 10px 5px;
   justify-content:center;
+  align-self: flex-start !important;
 }
 .streamContainer{
   flex:4;
+  align-items: flex-start;
+}
+.nxSlideshowContainer{
+  flex:2;
+  align-items: center;
 }
 
 .highlight-link{
