@@ -1,3 +1,5 @@
+const regex = /(https?:\/\/[^\s]+)/g;
+
 // Function to display GitHub repositories in a Bootstrap table
 function displayGitHubRepos(data) {
   var statusHTML = '';
@@ -27,8 +29,10 @@ function displayRocketLaunches(data) {
     else {
       var formattedDate = new Date(item.win_open).toLocaleDateString(); // format the date
     }
+    string = item.quicktext;
+    url = string.match(regex)[0];
     statusHTML += '<tr>';
-    statusHTML += '<td>' + item.name + '</td>';
+    statusHTML += '<td>' + '<a href='+ url +'>' + item.name + '</a>' + '</td>';
     statusHTML += '<td>' + item.provider.name + '</td>';
     statusHTML += '<td>' + item.pad.name + ', ' + item.pad.location.country + '</td>';
     statusHTML += '<td class="stateLocation">' + String(item.pad.location.state) + '</td>';
