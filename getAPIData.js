@@ -41,7 +41,7 @@ function displayRocketLaunches(data) {
     string = item.quicktext;
     url = string.match(regex)[0];
     statusHTML += '<tr>';
-    statusHTML += '<td>' + '<a href='+ url +'>' + item.name + '</a>' + '</td>';
+    statusHTML += '<td>' + '<a href='+ url +' target="_blank" rel="noopener noreferrer">' + item.name + '</a>' + '</td>';
     statusHTML += '<td>' + item.provider.name + '</td>';
     statusHTML += '<td>' + item.pad.name + '<br>' + item.pad.location.country + '</td>';
     statusHTML += '<td class="stateLocation">' + String(item.pad.location.state) + '</td>';
