@@ -128,3 +128,21 @@ a {
   margin: auto;
   text-align: center;
 }
+
+.ExperienceContainer {
+  flex:2;
+  padding-left: 50px;
+  
+}
+.LinksContainer {
+  flex:2;
+  padding-right: 50px;
+}
+.listText {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1C2541;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}

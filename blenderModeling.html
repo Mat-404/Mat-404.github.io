@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" color-mode="dark">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<head>
+    <title>Mathieu Cote's Webpage</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link href="main.css" rel="stylesheet" type="text/css" />
+    <link href="buttonMenu.css" rel="stylesheet" type="text/css" />
+    <link href="slideShow.css" rel="stylesheet" type="text/css" />
+    <link href="loadingScreen.css" rel="stylesheet" type="text/css" />
+</head>
+<script>
+    $(window).on("load", function () {
+        $(".loader-wrapper").fadeOut("slow");
+        document.body.style.overflow = "visible";
+        document.body.style.overflowX = "hidden";
+    });
+</script>
+
+<body>
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <div class="Landing">
+        <div class="websiteTitle center">
+            <div style="padding:20px;">
+                Mathieu Cote's Website!
+            </div>
+
+        </div>
+
+        <nav id='menu' class="">
+            <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+            <ul>
+                <li><a href='/index.html'>Home</a></li>
+                <li><a class='dropdown-arrow' href=''>Projects</a>
+                    <ul class='sub-menus'>
+                        <li><a href='/index.html'>Personal Website</a></li>
+                        <li><a href='/Modeling.html'>3D Modeling</a></li>
+                        <li><a href='/OrbitSim.html'>Orbit Simulation</a></li>
+                        <li><a href='/RocketSim.html'>Rocket Launch</a></li>
+                    </ul>
+                </li>
+                <li><a href='/about.html'>About</a></li>
+            </ul>
+        </nav>
+    </div>
+
+</body>
+
+</html>

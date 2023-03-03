@@ -12,6 +12,10 @@ $(document).ready(function () {
 
   // Function to display GitHub repositories in a Bootstrap table
   function displayGitHubRepos(data) {
+    data.sort(function(a, b) {
+      return new Date(b.updated_at) - new Date(a.updated_at);
+    });
+  
     var statusHTML = '';
     $.each(data, function (i, status) {
       var date = new Date(status.updated_at); // parse the date string
