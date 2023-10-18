@@ -9,6 +9,7 @@
   <link href="slideShow.css" rel="stylesheet" type="text/css" />
   <link href="buttonMenu.css" rel="stylesheet" type="text/css" />
   <link href="loadingScreen.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 <script>
   $(window).on("load", function () {
@@ -22,13 +23,22 @@
   <div class="loader-wrapper">
     <span class="loader"><span class="loader-inner"></span></span>
   </div>
-  <div class="Landing">
-    <div class="websiteTitle center">
-      <div style="padding:20px;">
-        Mathieu Cote's Website!
+  <div class="flexContainer">
+    <div class="verticalFlexContainer1">
+      <div class="websiteTitleHeader">
+        Mathieu Cote
       </div>
-
+      <div class="websiteTitleSubtext">
+        Aerospace Engineering Student
+      </div>
     </div>
+    <div class="verticalFlexContainer2">
+      <h2 class="banner">
+        Hi! I am Mathieu, a current Junior studying Aerospace Engineering!<br>
+        I created this page in order to showcase some of the more technical work I have done!
+      </h2>
+    </div>
+  </div>
 
     <nav id='menu'>
       <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
@@ -49,7 +59,7 @@
   <div class="flexContainer" style="margin-top: 80px;">
     <div class="streamContainer">
       <h1 class="center" style="margin-top: 80px;">
-        Orbit Simulation Project:
+        Orbit Simulation Project 1 (Java):
       </h1>
       <p class="banner">
         This is a project I worked on in the Fall of 2022 which aimed to simulate the motion of celestial bodies
@@ -70,8 +80,7 @@
         a reasonable speed.
         The other main reason to do this is because I wanted to make it so if there were an object in a very eccentric
         orbit, it would be able to affect the others' paths
-        without needing to calculate a parameterized path, and perform several derivatives, which in my opinion would be
-        extraordinatily time-consuming.
+        without needing to calculate a parameterized path, and perform several derivatives, which would be time-consuming.
         <br>
         This program can be found on my GitHub <a href="https://github.com/Mat-404/OrbitSim" class="highlight-link" target="_blank" rel="noopener noreferrer">here</a>.
       </p>
@@ -79,6 +88,25 @@
     <div class="nxSlideshowContainer">
       <div class="center">
         <img src="/images/OrbitSim.gif" alt="Orbit Simulation">
+      </div>
+    </div>
+  </div>
+  <div class="flexContainer" style="margin-top: 80px;">
+    <div class="streamContainer">
+      <h1 class="center" style="margin-top: 80px;">
+        Orbit Simulation Project 2 (Python):
+      </h1>
+      <p class="banner">
+        This is a project I worked on over the course of a week in the Fall of 2023 when I started to take a class called Spaceflight Mechanics. This course introduced equations used in determining attributes of different orbits.
+        I sought to apply this knowledge by re-working my previous orbit simulation program in Python, and adding some new features. This program features a dictionary that includes the orbital parameters of several celestial bodies, and can be used to simulate the motion of these bodies around the sun.
+        
+        <br>
+        This program can be found on my GitHub <a href="https://github.com/Mat-404/OrbitSim_V2" class="highlight-link" target="_blank" rel="noopener noreferrer">here</a>.
+      </p>
+    </div>
+    <div class="nxSlideshowContainer">
+      <div class="center">
+        <img src="/images/orbitsim2.gif" alt="Orbit Simulation">
       </div>
     </div>
   </div>

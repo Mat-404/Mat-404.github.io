@@ -27,18 +27,31 @@ body {
   width: 33.33%;
   padding: 10px;
 }
+.websiteTitleWrap{
+  flex:2;
+}
 
-.websiteTitle{
+.websiteTitleHeader{
   font-family: 'Ailerons', sans-serif;
   position:relative;
   width:100%;
   font-weight: 600;
-  font-size: 5em;
-  color: #3d676e;
+  font-size: 3em;
+  color: #233c41;
   background-size: cover;
-  background-color: #8fbfdb;
   margin: 0 !important;
 }
+.websiteTitleSubtext{
+  font-family: 'Ailerons', sans-serif;
+  position:relative;
+  width:100%;
+  font-weight: 600;
+  font-size: 2em;
+  color: #233c41;
+  background-size: cover;
+  margin: 0 !important;
+}
+
 .Landing{
   z-index: 35;
   background-size: cover;
@@ -54,8 +67,21 @@ body {
 .flexContainer{
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+}
+.verticalFlexContainer1{
+  margin-left: 10px;
+  display: flex;
+  flex:1;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+}
+.verticalFlexContainer2{
+  display: flex;
+  flex:1;
+  flex-direction: column;
+  justify-content: right;
+  align-items: right;
 }
 .projectNewsContainer{
   flex:2;
@@ -107,10 +133,10 @@ a {
 }
 
 .banner {
-  background-color: #1C2541;
-  width: 75%;
+  background-color: #aad8d4;
+  width: 100%;
   border-radius: 6px;
-  color: #fff;
+  color: #233c41;
   font-weight: bold;
   font-size: 20px;
   padding: 10px;
