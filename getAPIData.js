@@ -26,6 +26,8 @@ $(document).ready(function () {
       statusHTML += '<td>' + formattedDate + '</td>'; // use the formatted date instead
       statusHTML += '</tr>';
     });
+    $('#gitHubReposTableBody').parent().css('color', 'aliceblue');
+    $('#gitHubReposTableBody').parent().css('background-color', '#0a0730');
     $('#gitHubReposTableBody').html(statusHTML);
   }
 
@@ -56,6 +58,7 @@ $(document).ready(function () {
     }
 
     $('#rocketLaunchTableBody').html(statusHTML);
+    $('#rocketLaunchTableBody').parent().css('color', 'aliceblue');
     highlightFloridaLaunches();
   }
 
@@ -63,8 +66,12 @@ $(document).ready(function () {
     function highlightFloridaLaunches() {
       $('.table td:nth-child(4)').each(function () {
         if ($(this).text() == 'FL') {
-          $(this).parent().css('background-color', '#97dfe6');
+          $(this).parent().css('background-color', '#5d5096');
+          $(this).parent().css('color', 'aliceblue');
           $(this).parent().css('font-weight', 'bold');
+        } else {
+          $(this).parent().css('background-color', '#4d4175');
+          $(this).parent().css('color', 'aliceblue');
         }
       });
     }

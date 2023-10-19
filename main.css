@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(-45deg, #576693, #87c0d8);
+  background: linear-gradient(90deg, #0a0730, #202e35);
   background-repeat: repeat;
   background-size: 100% 900%;
   height: 100%;
@@ -37,7 +37,7 @@ body {
   width:100%;
   font-weight: 600;
   font-size: 3em;
-  color: #233c41;
+  color: aliceblue;
   background-size: cover;
   margin: 0 !important;
 }
@@ -47,7 +47,7 @@ body {
   width:100%;
   font-weight: 600;
   font-size: 2em;
-  color: #233c41;
+  color: aliceblue;
   background-size: cover;
   margin: 0 !important;
 }
@@ -58,12 +58,11 @@ body {
   margin: 0 !important;
 }
 .fromFlorida{
-  background-color: #CCFFCB;
+  background-color: #5d5096;
 }
 .notfromFlorida{
-  background-color: #abd8aa;
+  background-color: #4d4175;
 }
-
 .flexContainer{
   display: flex;
   flex-direction: row;
@@ -86,7 +85,8 @@ body {
 .projectNewsContainer{
   flex:2;
   border:#1C2541 3px solid;
-  background-color: #87c0e9;
+  background-color: #243b4b;
+  color: aliceblue;
   box-shadow: rgba(50, 50, 50, 0.5) 10px 10px 5px;
   justify-content:center;
   align-self: flex-start !important;
@@ -101,23 +101,14 @@ body {
 }
 
 .highlight-link{
-  box-shadow:inset 0 -0.225rem 0 #6D507C;
+  box-shadow:inset 0 -0.225rem 0 aliceblue;
   box-sizing:border-box;
-  color:#6D507C;
+  color: aliceblue;
   display:inline-block;
   padding:0.125rem 0.125rem;
   transition:all 0.2s ease-in-out;
   padding: 10px;
 
-}
-
-.highlight-link:hover{
-  box-shadow:inset 0 -2rem 0 0 #6D507C;
-  color:#fff
-}
-
-a {
-  text-decoration: none;
 }
 
 .conditionalText {
@@ -133,10 +124,10 @@ a {
 }
 
 .banner {
-  background-color: #aad8d4;
+  background-color: #1a1925;
   width: 100%;
   border-radius: 6px;
-  color: #233c41;
+  color: #c4d3d6;
   font-weight: bold;
   font-size: 20px;
   padding: 10px;
@@ -163,12 +154,4 @@ a {
 .LinksContainer {
   flex:2;
   padding-right: 50px;
-}
-.listText {
-  font-size: 20px;
-  font-weight: bold;
-  color: #1C2541;
-  text-align: left;
-  margin: 0;
-  padding: 0;
 }
