@@ -23,12 +23,22 @@
     <span class="loader"><span class="loader-inner"></span></span>
   </div>
   <div class="Landing">
-    <div class="websiteTitle center">
-      <div style="padding:20px;">
-        Mathieu Cote's Website!
+    <div class="flexContainer">
+      <div class="verticalFlexContainer1">
+          <div class="websiteTitleHeader">
+              Mathieu Cote
+          </div>
+          <div class="websiteTitleSubtext">
+              Aerospace Engineering Student
+          </div>
       </div>
-
-    </div>
+      <div class="verticalFlexContainer2">
+          <h2 class="banner">
+              Hi! I am Mathieu, a current Junior studying Aerospace Engineering!<br>
+              I created this page in order to showcase some of the more technical work I have done!
+          </h2>
+      </div>
+  </div>
 
     <nav id='menu' class="">
       <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
@@ -71,17 +81,18 @@
       <script src="slideshow.js"></script>
     </div>
     <div class="stream-container">
-      <h1 class="center">
+      <h1 class="center" style="color: white;">
         Siemens NX Modeling
       </h1>
-      <h2 class="center">
+      <h2 class="center" style="color: white;">
         <u>Video-guided practice</u>
       </h2>
       <div class="banner">
         One of the classes I took at Florida Tech was called Aerospace Practicum.
         This class contained some lessons in modelling parts such as brackets and washers using the Siemens NX software.
         In my free time, however, I wanted to practice more than I was able to with the class.
-        Because of this, I took some time and tried to model the first 17 parts from the below youtube video providing examples of practice
+        Because of this, I took some time and tried to model the first 17 parts from the below youtube video providing
+        examples of practice
         parts.
       </div>
       <div class="child center">
@@ -93,7 +104,7 @@
     </div>
   </div>
 
-  <h2 class="center">
+  <h2 class="center" style="color: white;">
     <u>Arduino Uno Case</u>
   </h2>
   <div class="banner">
@@ -112,20 +123,62 @@
     <div><img src="/NX_Assets/Images/Arduino Case Top.png" style="width:100%; border-radius: 15px"></div>
   </div>
 
-  <h2 class="center">
+  <h2 class="center" style="color: white;">
     <u>Rocketry Club</u>
   </h2>
   <div class="banner">
-    I am also a member of the Florida Tech Rocketry Club. We have a few projects that we are working on, but I have
-    been working on a few of the parts for our rocket, mainly prototyping and 3D printing.
+    I am also a member of the Florida Tech Rocketry Club. I have been working on a few of the parts for our rocket,
+    mainly prototyping and 3D printing.
     <br>
-    I have been using NX and blender to model the parts and then 3D printing them.
+    I was initially using NX and blender to model the parts. Later on, I experimented using other 3D modeling software
+    such as Inventor and settled on Fusion 360.
+    <br>
+    We found that this software was more user-friendly and had a much easier workflow when it comes to version control.
+    <br>
+    The bulk of this rocket was 3D printed out of PLA, but the body tube was made out of cardboard and the fins were laser-cut out of birch wood.
   </div>
-  <div class="table-wrap, center">
-    <div><img src="/images/RocketryClubImg1.png" style="width:30%; border-radius: 15px"></div>
-
+  <div class="table-wrap">
+    <figure>
+      <img src="/images/RocketryModels/RocketryClubImg1.png" style="width:100%; border-radius: 15px; height: auto;">
+      <figcaption class="center" style="color: white;">Initial Rocket Idea render in NX - Short and Stumpy</figcaption>
+    </figure>
+    <figure>
+      <img src="/images/RocketryModels/ThrustCan v16.png" style="width:100%; border-radius: 15px; height: auto;">
+      <figcaption class="center" style="color: white;">Thrust can model for final Stormchaser Assembly</figcaption>
+    </figure>
   </div>
-
+  <div class="table-wrap">
+    <figure>
+      <img src="/images/RocketryModels/Aeropack KadinDev v18.png"
+        style="width:100%; border-radius: 15px; height: auto;">
+      <figcaption class="center" style="color: white;">Aeropack model to hold engine inside of thrust can</figcaption>
+    </figure>
+    <figure>
+      <img src="/images/RocketryModels/NoseConeWholeV2 v1.png" style="width:100%; border-radius: 15px; height: auto;">
+      <figcaption class="center" style="color: white;">Nose cone model for to hold bulkhead and payload</figcaption>
+    </figure>
+  </div>
+  <div class="table-wrap">
+    <figure>
+      <img src="/images/RocketryModels/NoseConeCap v13.png" style="width:100%; border-radius: 15px; height: auto;">
+      <figcaption class="center" style="color: white;">Nosecone bulkhead to which an eye hook is attached for the
+        parachute</figcaption>
+    </figure>
+    <figure>
+      <img src="/images/RocketryModels/Assembly 2 v12.png" style="width:100%; border-radius: 15px; height: auto;">
+      <figcaption class="center" style="color: white;">Total Assembly for Stormchaser</figcaption>
+    </figure>
+  </div>
+  <div class="table-wrap">
+    <figure>
+      <img src="/images/RocketryModels/Stormchaser 1.jpg" style="width:100%; border-radius: 15px; height: auto;">
+      <figcaption class="center" style="color: white;">Stormchaser assembled and on the launch stand</figcaption>
+    </figure>
+    <figure>
+      <img src="/images/RocketryModels/Stormchaser 2.jpg" style="width:100%; border-radius: 15px; height: auto;">
+      <figcaption class="center" style="color: white;">Stormchaser immediately after ignition</figcaption>
+    </figure>
+  </div>
 </body>
 
 </html>
