@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" color-mode="dark">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<head>
+  <title>Mathieu Cote's Webpage</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link href="main.css" rel="stylesheet" type="text/css" />
+  <link href="buttonMenu.css" rel="stylesheet" type="text/css" />
+  <link href="slideShow.css" rel="stylesheet" type="text/css" />
+  <link href="loadingScreen.css" rel="stylesheet" type="text/css" />
+</head>
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VE8B34DPNJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VE8B34DPNJ');
+</script>
+
+
+<script>
+  $(window).on("load", function () {
+    $(".loader-wrapper").fadeOut("slow");
+    document.body.style.overflow = "visible";
+    document.body.style.overflowX = "hidden";
+  });
+</script>
+
+<body>
+  <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+  </div>
+  <div class="Landing">
+    <div class="flexContainer">
+      <div class="verticalFlexContainer1">
+          <div class="websiteTitleHeader">
+              Mathieu Cote
+          </div>
+          <div class="websiteTitleSubtext">
+              Aerospace Engineering Student
+          </div>
+      </div>
+      <div class="verticalFlexContainer2">
+          <h2 class="banner">
+              Hi! I am Mathieu, a current Junior studying Aerospace Engineering!<br>
+              I created this page in order to showcase some of the more technical work I have done!
+          </h2>
+      </div>
+  </div>
+
+    <nav id='menu' class="">
+      <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+      <ul>
+        <li><a href='/index.html'>Home</a></li>
+        <li><a class='dropdown-arrow' href=''>Projects</a>
+          <ul class='sub-menus'>
+            <li><a href='/index.html'>Personal Website</a></li>
+            <li><a href='/modeling.html'>3D Modeling</a></li>
+            <li><a href='/OrbitSim.html'>Orbit Simulation</a></li>
+            <li><a href='/RocketSim.html'>Rocket Launch</a></li>
+          </ul>
+        </li>
+        <li><a href='/about.html'>About</a></li>
+      </ul>
+    </nav>
+  </div>
+
+<div style="margin-top: 80px; margin-bottom:40px;">
+  <h2 class="center" style="color: white">
+    <u>Cat Feeder Project - 2024</u>
+  </h2>
+  <div class="banner">
+     I bought some gravity water dispensers for really cheap, and I wanted to convert one of them to be a food dispenser.
+     However, it had very little clearance for food to flow through from. To fix this, I pulled up Fusion 360 and, after some
+     iterations, I decided on a design that would take minimal filament to 3d print, and also handle the weight of a full cat food container.
+     I used Fusion 360's Simulation mode to apply pressures and constraints to see if the print would structurally hold up, printed it, and installed it. 
+     Now Gilly can enjoy his food at his leisure, and automates one extra thing. 
+  </div>
+  <div class="table-wrap">
+    <figure>
+    <img src="/images/WaterDispenser.jpg" style="width:100%; border-radius: 15px; height: 50%; margin: auto;">
+    <figcaption class="center" style="color: white;">Initial off-the-shelf water dispenser</figcaption>
+    </figure>
+    <figure>
+      <img src="/images/Simulation.png" style="width:100%; border-radius: 15px; height: 50%; margin: auto;">
+      <figcaption class="center" style="color: white;">Modeled Design in Fusion 360 - Analysis results for displacement</figcaption>
+      </figure>
+    <figure>
+      <img src="/images/ModifiedDispenser.jpg" style="width:100%; border-radius: 15px; height: 50%; margin: auto;">
+      <figcaption class="center" style="color: white;">Feeder with adapter installed</figcaption>
+      </figure>
+  </div>
+</div>
+
+<h2 class="center" style="color: white;">
+  <u>Projector Mount - 2023</u>
+</h2>
+<div class="banner">
+  As I moved into my new apartment, I bought a relatively cheap projector. My ceiling has an angle to it, and wanted to point the projector on my ceiling. 
+  However, propping it up on some books proved difficult, and wanted to design a stand to hold it at a 45 degree angle.
+</div>
+<div class="table-wrap">
+  <figure>
+    <img src="/images/ProjectorMountDrawing.png" style="width:100%; border-radius: 15px; height: auto;">
+    <figcaption class="center" style="color: white;">CAD Drawing of the mount</figcaption>
+  </figure>
+  <figure>
+    <img src="/images/Projector.jpg" style="width:83%; border-radius: 15px; height: auto;">
+    <figcaption class="center" style="color: white;">Image of the mount holding the projector</figcaption>
+  </figure>
+</div>
+
+  <h2 class="center" style="color: white;">
+    <u>Rocketry Club - 2023</u>
+  </h2>
+  <div class="banner">
+    I am also a member of the Florida Tech Rocketry Club. I have been working on a few of the parts for our rocket,
+    mainly prototyping and 3D printing.
+    <br>
+    I was initially using NX and blender to model the parts. Later on, I experimented using other 3D modeling software
+    such as Inventor and settled on Fusion 360.
+    <br>
+    We found that this software was more user-friendly and had a much easier workflow when it comes to version control.
+    <br>
+    The bulk of this rocket was 3D printed out of PLA, but the body tube was made out of cardboard and the fins were laser-cut out of birch wood.
+  </div>
+  <div class="table-wrap">
+    <figure>
+      <img src="/images/RocketryModels/RocketryClubImg1.png" style="width:100%; border-radius: 15px; height: auto;">
+      <figcaption class="center" style="color: white;">Initial Rocket Idea render in NX - Short and Stumpy</figcaption>
+    </figure>
+    <figure>
+      <img src="/images/RocketryModels/ThrustCan v16.png" style="width:100%; border-radius: 15px; height: auto;">
+      <figcaption class="center" style="color: white;">Thrust can model for final Stormchaser Assembly</figcaption>
+    </figure>
+  </div>
+  <div class="table-wrap">
+    <figure>
+      <img src="/images/RocketryModels/Aeropack KadinDev v18.png"
+        style="width:100%; border-radius: 15px; height: auto;">
+      <figcaption class="center" style="color: white;">Aeropack model to hold engine inside of thrust can</figcaption>
+    </figure>
+    <figure>
+      <img src="/images/RocketryModels/NoseConeWholeV2 v1.png" style="width:100%; border-radius: 15px; height: auto;">
+      <figcaption class="center" style="color: white;">Nose cone model for to hold bulkhead and payload</figcaption>
+    </figure>
+  </div>
+  <div class="table-wrap">
+    <figure>
+      <img src="/images/RocketryModels/NoseConeCap v13.png" style="width:100%; border-radius: 15px; height: auto;">
+      <figcaption class="center" style="color: white;">Nosecone bulkhead to which an eye hook is attached for the
+        parachute</figcaption>
+    </figure>
+    <figure>
+      <img src="/images/RocketryModels/Assembly 2 v12.png" style="width:100%; border-radius: 15px; height: auto;">
+      <figcaption class="center" style="color: white;">Total Assembly for Stormchaser</figcaption>
+    </figure>
+  </div>
+  <div class="table-wrap">
+    <figure>
+      <img src="/images/RocketryModels/Stormchaser 1.jpg" style="width:100%; border-radius: 15px; height: auto;">
+      <figcaption class="center" style="color: white;">Stormchaser assembled and on the launch stand</figcaption>
+    </figure>
+    <figure>
+      <img src="/images/RocketryModels/Stormchaser 2.jpg" style="width:100%; border-radius: 15px; height: auto;">
+      <figcaption class="center" style="color: white;">Stormchaser immediately after ignition</figcaption>
+    </figure>
+  </div>
+
+  <div class="flexContainer" style="margin-top: 80px; margin-bottom:40px;">
+    <div class="nxSlideshowContainer">
+      <div id="slideshow">
+        <img src="NX_Assets/Images/P01.png" class="active" style="border:#1C2541 3px solid">
+        <img src="NX_Assets/Images/P02.png">
+        <img src="NX_Assets/Images/P03.png">
+        <img src="NX_Assets/Images/P04.png">
+        <img src="NX_Assets/Images/P05.png">
+        <img src="NX_Assets/Images/P06.png">
+        <img src="NX_Assets/Images/P07.png">
+        <img src="NX_Assets/Images/P08.png">
+        <img src="NX_Assets/Images/P09.png">
+        <img src="NX_Assets/Images/P10.png">
+        <img src="NX_Assets/Images/P11.png">
+        <img src="NX_Assets/Images/P12.png">
+        <img src="NX_Assets/Images/P13.png">
+        <img src="NX_Assets/Images/P14.png">
+        <img src="NX_Assets/Images/P15.png">
+        <img src="NX_Assets/Images/P16.png">
+        <img src="NX_Assets/Images/P17.png">
+      </div>
+      <script src="slideshow.js"></script>
+    </div>
+    <div class="stream-container">
+      <h1 class="center" style="color: white;">
+        Siemens NX Modeling - 2022
+      </h1>
+      <h2 class="center" style="color: white;">
+        <u>Video-guided practice</u>
+      </h2>
+      <div class="banner">
+        One of the classes I took at Florida Tech was called Aerospace Practicum.
+        This class contained some lessons in modelling parts such as brackets and washers using the Siemens NX software.
+        In my free time, however, I wanted to practice more than I was able to with the class.
+        Because of this, I took some time and tried to model the first 17 parts from the below youtube video providing
+        examples of practice
+        parts.
+      </div>
+      <div class="child center">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/vdCukrrHIrM" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="center" style="color: white;">
+    <u>Arduino Uno Case - 2022</u>
+  </h2>
+  <div class="banner">
+    Also as a part of Aerospace Practicum, we had some projects using the Arduino Uno. As an additional project, I
+    purchased a small LCD screen to affix on top.
+    <br>
+    On top of this, I wanted to create a case for it so I could display it like an alarm clock.
+    <br>
+    I inevitably had issues with getting it printed through my local library, but I still created the models below in
+    NX.
+
+  </div>
+
+  <div class="table-wrap">
+    <div><img src="/NX_Assets/Images/Arduino Case Bottom.png" style="width:100%; border-radius: 15px"></div>
+    <div><img src="/NX_Assets/Images/Arduino Case Top.png" style="width:100%; border-radius: 15px"></div>
+  </div>
+
+</body>
+
+</html>
