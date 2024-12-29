@@ -14,10 +14,10 @@ width: 100%;
 #menu {
 position: absolute;
 font-family: 'Ailerons', sans-serif;
-background: linear-gradient(to top, #1C2541, #5DB7DE);
+background: linear-gradient(to top, #4d4175, #726b91);
 color: rgb(102, 102, 102);
 border-radius: 6px;
-border: 4px ridge #ababab;
+border: 4px ridge #FAF9F6;
 margin-bottom: 20px;
 z-index: 10;
 box-shadow: 10px 10px 5px rgba(54, 54, 54, 0.413);

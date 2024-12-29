@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(90deg, #0a0730, #202e35);
+  background: linear-gradient(90deg, rgb(199, 212, 212), #a6b3bb);
   background-repeat: repeat;
   background-size: 100% 900%;
   height: 100%;
@@ -39,8 +39,8 @@ body {
   position: relative;
   width: 100%;
   font-weight: 600;
-  font-size: 3em;
-  color: aliceblue;
+  font-size: 4em;
+  color: #111924;
   background-size: cover;
   margin: 0 !important;
 }
@@ -51,7 +51,7 @@ body {
   width: 100%;
   font-weight: 600;
   font-size: 2em;
-  color: aliceblue;
+  color: #111924;
   background-size: cover;
   margin: 0 !important;
 }
@@ -59,13 +59,13 @@ body {
 .Landing {
   z-index: 35;
   background-size: cover;
+  background-color: #FAF9F6;
   margin: 0 !important;
 }
 
 .fromFlorida {
-  background-color: #5d5096;
+  background-color: #726b91;
 }
-
 .notfromFlorida {
   background-color: #4d4175;
 }
@@ -78,25 +78,17 @@ body {
 .verticalFlexContainer1 {
   margin-left: 10px;
   display: flex;
-  flex: 1;
+  flex: 2;
   flex-direction: column;
   justify-content: left;
   align-items: left;
 }
 
-.verticalFlexContainer2 {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  justify-content: right;
-  align-items: right;
-}
-
 .projectNewsContainer {
   flex: 2;
-  border: #1C2541 3px solid;
-  background-color: #243b4b;
-  color: aliceblue;
+  border: #111924 3px solid;
+  background: linear-gradient(180deg, #b0b0b9, #657d8a);
+  color: 111924;
   box-shadow: rgba(50, 50, 50, 0.5) 10px 10px 5px;
   justify-content: center;
   align-self: flex-start !important;
@@ -104,6 +96,7 @@ body {
 
 .streamContainer {
   flex: 4;
+  padding-top: 20px;
   align-items: flex-start;
 }
 
@@ -113,9 +106,9 @@ body {
 }
 
 .highlight-link {
-  box-shadow: inset 0 -0.225rem 0 aliceblue;
+  box-shadow: inset 0 -0.225rem 0 darkslateblue;
   box-sizing: border-box;
-  color: aliceblue;
+  color: darkslateblue;
   display: inline-block;
   padding: 0.125rem 0.125rem;
   transition: all 0.2s ease-in-out;
@@ -135,18 +128,25 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+.SectionHeading {
+  font-family: 'Ailerons', sans-serif;
+  font-size: 40px;
+  font-weight: bolder;
+  text-decoration: underline;
+  color: #111924;
+  text-align: center;
+  margin:auto
+}
+
 .banner {
-  background-color: #1a1925;
-  width: 100%;
+  background-color: rgba(17, 25, 36, 0.5);
   border-radius: 6px;
-  color: #c4d3d6;
+  color: #FAF9F6;
   font-weight: bold;
   font-size: 20px;
   padding: 10px;
   text-align: center;
   margin: auto;
-  margin-bottom: 20px;
-  margin-top: 20px;
 }
 
 .shadGradient {

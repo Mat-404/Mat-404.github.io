@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" color-mode="dark">
+<!--Load scipts for analytics and launch API data-->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="getAPIData.js"></script>
 
+<!--Tab title, icon, load css & bootstrap-->
 <head>
   <title>Mathieu Cote's Webpage</title>
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
   <link href="main.css" rel="stylesheet" type="text/css" />
-  <link href="buttonMenu.css" rel="stylesheet" type="text/css" />
   <link href="slideShow.css" rel="stylesheet" type="text/css" />
+  <link href="buttonMenu.css" rel="stylesheet" type="text/css" />
   <link href="loadingScreen.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 
 
@@ -22,7 +26,7 @@
   gtag('config', 'G-VE8B34DPNJ');
 </script>
 
-
+<!--Load script for loading screen-->
 <script>
   $(window).on("load", function () {
     $(".loader-wrapper").fadeOut("slow");
@@ -32,40 +36,55 @@
 </script>
 
 <body>
+
+  <!--Play loader animation while loading-->
   <div class="loader-wrapper">
     <span class="loader"><span class="loader-inner"></span></span>
   </div>
-  <div class="Landing">
-    <div class="flexContainer">
-      <div class="verticalFlexContainer1">
-          <div class="websiteTitleHeader">
-              Mathieu Cote
-          </div>
-          <div class="websiteTitleSubtext">
-              Aerospace Engineering Student
-          </div>
+
+  <!--Title and Blurb-->
+  <div class="flexContainer">
+
+    <div class="verticalFlexContainer1">
+      <div class="websiteTitleHeader">
+        Mathieu Cote
       </div>
-      <div class="verticalFlexContainer2">
-          <h2 class="banner">
-              Hi! I am Mathieu, a current Junior studying Aerospace Engineering!<br>
-              I created this page in order to showcase some of the more technical work I have done!
-          </h2>
+      <div class="websiteTitleSubtext">
+        Aerospace Engineering Student
       </div>
+    </div>
+
+    <div style="flex:1;margin-right:20px; padding-top: 25px;">
+      <div style="color: #FAF9F6;font-size: 30px;">
+        <p>
+          <strong>All my links:</strong>
+          <a class="highlight-link" href="https://github.com/Mat-404" target="_blank" rel="noopener noreferrer">
+            Github
+          </a>
+          <a class="highlight-link" href="https://www.linkedin.com/in/mathieu-cote-08860621b/" target="_blank"
+            rel="noopener noreferrer">
+            LinkedIn
+          </a>
+          <a class="highlight-link" href="https://www.youtube.com/@mathieucote6707" target="_blank"
+            rel="noopener noreferrer">
+            YouTube
+          </a>
+        </p>
+      </div>
+    </div>
+
   </div>
 
-    <nav id='menu' class="">
+  <!--Not really the landing, but button row, may wish to redesign-->
+  <div class="Landing">
+    <nav id='menu'>
       <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
       <ul>
         <li><a href='/index.html'>Home</a></li>
-        <li><a class='dropdown-arrow' href=''>Projects</a>
-          <ul class='sub-menus'>
-            <li><a href='/index.html'>Personal Website</a></li>
-            <li><a href='/modeling.html'>3D Modeling</a></li>
-            <li><a href='/OrbitSim.html'>Orbit Simulation</a></li>
-            <li><a href='/RocketSim.html'>Rocket Launch</a></li>
-          </ul>
-        </li>
-        <li><a href='/about.html'>About</a></li>
+        <li><a href='/OrbitSim.html'>Orbit Simulation</a></li>
+        <li><a href='/modeling.html'>3D Modeling Projects</a></li>
+        <li><a href='/RocketSim.html'>Rocket Simulation</a></li>
+        <li><a href='/SolidPropulsion.html'>Senior Design</a></li>
       </ul>
     </nav>
   </div>

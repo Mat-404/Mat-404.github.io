@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" color-mode="dark">
+<!--Load scipts for analytics and launch API data-->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="getAPIData.js"></script>
 
-
+<!--Tab title, icon, load css & bootstrap-->
 <head>
   <title>Mathieu Cote's Webpage</title>
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
@@ -25,7 +26,7 @@
   gtag('config', 'G-VE8B34DPNJ');
 </script>
 
-
+<!--Load script for loading screen-->
 <script>
   $(window).on("load", function () {
     $(".loader-wrapper").fadeOut("slow");
@@ -36,10 +37,14 @@
 
 <body>
 
+  <!--Play loader animation while loading-->
   <div class="loader-wrapper">
     <span class="loader"><span class="loader-inner"></span></span>
   </div>
+
+  <!--Title and Blurb-->
   <div class="flexContainer">
+
     <div class="verticalFlexContainer1">
       <div class="websiteTitleHeader">
         Mathieu Cote
@@ -48,86 +53,155 @@
         Aerospace Engineering Student
       </div>
     </div>
-    <div class="verticalFlexContainer2">
-      <h2 class="banner">
-        Hi! I am Mathieu, a current Junior studying Aerospace Engineering!<br>
-        I created this page in order to showcase some of the more technical work I have done!
-      </h2>
+
+    <div style="flex:1;margin-right:20px; padding-top: 25px;">
+      <div style="color: #FAF9F6;font-size: 30px;">
+        <p>
+          <strong>All my links:</strong>
+          <a class="highlight-link" href="https://github.com/Mat-404" target="_blank" rel="noopener noreferrer">
+            Github
+          </a>
+          <a class="highlight-link" href="https://www.linkedin.com/in/mathieu-cote-08860621b/" target="_blank"
+            rel="noopener noreferrer">
+            LinkedIn
+          </a>
+          <a class="highlight-link" href="https://www.youtube.com/@mathieucote6707" target="_blank"
+            rel="noopener noreferrer">
+            YouTube
+          </a>
+        </p>
+      </div>
     </div>
+
   </div>
 
+  <!--Not really the landing, but button row, may wish to redesign-->
   <div class="Landing">
     <nav id='menu'>
       <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
       <ul>
         <li><a href='/index.html'>Home</a></li>
-        <li><a class='dropdown-arrow' href=''>Projects</a>
-          <ul class='sub-menus'>
-            <li><a href='/index.html'>Personal Website</a></li>
-            <li><a href='/modeling.html'>3D Modeling</a></li>
-            <li><a href='/OrbitSim.html'>Orbit Simulation</a></li>
-            <li><a href='/RocketSim.html'>Rocket Simulation</a></li>
-          </ul>
-        </li>
-        <li><a href='/about.html'>About</a></li>
+        <li><a href='/OrbitSim.html'>Orbit Simulation</a></li>
+        <li><a href='/modeling.html'>3D Modeling Projects</a></li>
+        <li><a href='/RocketSim.html'>Rocket Simulation</a></li>
+        <li><a href='/SolidPropulsion.html'>Senior Design</a></li>
       </ul>
     </nav>
   </div>
 
-  <div class="flexContainer" style="margin-top: 80px;">
+  <!--Page Content: Left is tables, right is content stream-->
+  <div class="flexContainer" style="margin-top: 60px;">
+    
+    <!--Rocket launches Table-->
     <div class="projectNewsContainer">
-      <h1 class="center">
+      <div class="verticalFlexContainer1">
+        <h1 class="center" style="font-family: 'Ailerons', sans-serif;">
+          Upcoming Rocket Launches:
+        </h1>
+        <p class="center";style="font-size: 10px;">
+          (Lighter colors are Florida launches)
+        </p>
+      </div>
+
+      <div class="table-responsive">
+        <table id="rocketTable" class="table table-bordered">
+          <thead>
+            <tr class="table-info">
+              <th scope="col" style="background-color: #0A2342;font-size: 15px;">Mission Name</th>
+              <th scope="col" style="background-color: #0A2342;font-size: 15px;">Provider</th>
+              <th scope="col" style="background-color: #0A2342;font-size: 15px;">Location</th>
+              <th scope="col" style="background-color: #0A2342;font-size: 15px;">State</th>
+              <th scope="col" style="background-color: #0A2342;font-size: 15px;">Launch Window:</th>
+            </tr>
+          </thead>
+          <tbody id="rocketLaunchTableBody">
+          </tbody>
+        </table>
+        <div class="highlight-link";style="text-align: right; margin-right: 10px;">Data by <a href="https://www.rocketlaunch.live/"
+            target="_blank" rel="noopener noreferrer">RocketLaunch.Live</a></div>
+      </div>
+
+      <!--Recent Github Projects-->
+      <h1 class="center" style="margin-top: 30px;font-family: 'Ailerons', sans-serif;">
         Recent Projects:
       </h1>
       <div class="table-responsive">
         <table class="table table-bordered" id="gitTable">
           <thead>
             <tr class="table-info">
-              <th scope="col" style="background-color: #0a0730;">Project Name</th>
-              <th scope="col" style="background-color: #0a0730;">Primary Language</th>
-              <th scope="col" style="background-color: #0a0730;">Last Updated:</th>
+              <th scope="col" style="background-color: #0A2342;">Project Name</th>
+              <th scope="col" style="background-color: #0A2342;">Primary Language</th>
+              <th scope="col" style="background-color: #0A2342;">Last Updated:</th>
             </tr>
           </thead>
           <tbody id="gitHubReposTableBody">
           </tbody>
         </table>
       </div>
-      <h1 class="center">
-        Upcoming Rocket Launches:
-      </h1>
-      <div class="table-responsive">
-        <table id="rocketTable" class="table table-bordered">
-          <thead>
-            <tr class="table-info">
-              <th scope="col" style="background-color: #0a0730;">Mission Name</th>
-              <th scope="col" style="background-color: #0a0730;">Provider</th>
-              <th scope="col" style="background-color: #0a0730;">Launching From</th>
-              <th scope="col" style="background-color: #0a0730;">State</th>
-              <th scope="col" style="background-color: #0a0730;">Launch Window Open</th>
-            </tr>
-          </thead>
-          <tbody id="rocketLaunchTableBody">
-          </tbody>
-        </table>
-        <div style="text-align: right; margin-right: 10px;">Data by <a href="https://www.rocketlaunch.live/"
-            target="_blank" rel="noopener noreferrer">RocketLaunch.Live</a></div>
-      </div>
+
     </div>
+
+    <!--Content Stream-->
     <div class="streamContainer">
-      <div class="center">
+
+      <h2 class="banner" style="width: 70%;">
+        Hi! I am Mathieu, a current Senior studying Aerospace Engineering!<br>
+        I created this page in order to showcase some of the more technical work I have done!
+      </h2>
+
+      <!--Hello There GIF-->
+      <div class="center" style="padding-top:20px;padding-bottom: 20px;">
         <img src="https://media.giphy.com/media/xTiIzJSKB4l7xTouE8/giphy.gif" width="480" height="208"
-          style="border-radius: 6px; box-shadow: rgba(50, 50, 50, 0.5) 10px 10px 5px;">
+          style="border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.5) 10px 10px 5px;">
       </div>
-      <div class="center">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Q0kn3qgxZRY?si=kCDNWeuZFO44obR6"
+
+      <div class="SectionHeading" style="width:20%;"> Projects:</div>
+
+      <div class="banner" style="width: 70%;font-size: 15px;">
+        <div style="font-size: 25px;">
+          SPARCC 3.0 (2024-2025)
+        </div>
+        Aerospace Engineering senior capstone project which seeks to create a solid pellet-fueled propulsion system for cubesats that fits within a 2U volume.
+        <br> I am serving as the Systems Engineer for a team of seven to ensure each subsystem's design options will work with each other to produce the intended result.
+      </div>
+
+      <div class="banner" style="width: 70%;font-size: 15px;">
+        <div style="font-size: 25px;">
+          Spacecraft Attitude Simulator (2024)
+        </div>
+        A MATLAB / Simulink class project which modeled the attitude dynamics and kinematics. Used modeled magnetorquers and reaction wheels alongside modeled sensors in order to detumble and maintain a nadir attitude.
+      </div>
+
+      <div class="banner" style="width: 70%;font-size: 15px;">
+        <div style="font-size: 25px;">
+          Rocket Simulation (2023)
+        </div>
+        A program written in Python to determine the trajectory of a model rocket using specific thrust vs time data provided by Estes. Uses vector math to determine the maximum altitude and distance downrange it would land, assuming no outside wind.
+      </div>
+
+      <div class="banner" style="width: 70%;font-size: 15px;">
+        <div style="font-size: 25px;">
+          Orbit Simulation (2022-2023)
+        </div>
+        A series of two projects in which I create numerical 2-D orbit simulations via Java and Python. <br> 
+        The first method calculates the net gravitational force on each body at each time step, so it can numerically model multiple bodies' interations <br>
+        The second method uses Keplerian equations of orbital motion (ignoring inclinations) and can model multiple bodies analytically.
+      </div>
+
+      <div class="SectionHeading" style="width:20%;"> YouTube Videos:</div>
+
+      <div class="flexContainer" style="margin: auto;padding-left: 70px;padding-top: 20px;">
+        <div style="border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.5) 10px 10px 5px;">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/Q0kn3qgxZRY?si=kCDNWeuZFO44obR6"
           title="YouTube video player" frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
-        <div class="center">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/v-QEfWbP4UI" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
+        </div>
+        <div style="border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.5) 10px 10px 5px;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/v-QEfWbP4UI" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
         </div>
       </div>
     </div>
