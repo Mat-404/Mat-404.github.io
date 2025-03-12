@@ -4,9 +4,82 @@ body {
   background-size: 100% 900%;
   height: 100%;
   overflow: hidden;
+  width: 100%;
   overflow-x: hidden;
   padding: 0 !important;
   margin: 0 !important;
+}
+
+/* Media queries for mobile responsiveness */
+@media (max-width: 768px) {
+  body {
+    background-size: cover;
+    overflow: auto;
+  }
+
+  .table-wrap {
+    width: 100%;
+  }
+
+  .table-wrap > * {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .websiteTitleHeader {
+    font-size: 2em;
+  }
+
+  .websiteTitleSubtext {
+    font-size: 1.5em;
+  }
+
+  .flexContainer {
+    flex-direction: column;
+  }
+
+  .projectNewsContainer, .streamContainer, .nxSlideshowContainer {
+    flex: 1;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .highlight-link {
+    padding: 5px;
+  }
+
+  .banner {
+    font-size: 16px;
+    padding: 5px;
+  }
+
+  .SectionHeading {
+    font-size: 30px;
+  }
+}
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive navigation menu */
+#menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#menu ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#menu li {
+  width: 100%;
+  text-align: center;
 }
 
 @font-face {
@@ -14,7 +87,7 @@ body {
   src: url("/fonts/Ailerons.otf") format("opentype");
 }
 
-.table-wrap>* {
+.table-wrap > * {
   display: table-cell;
 }
 
@@ -24,7 +97,7 @@ body {
   width: 80%;
 }
 
-.table-wrap>* {
+.table-wrap > * {
   box-sizing: border-box;
   width: 33.33%;
   padding: 10px;
@@ -35,7 +108,7 @@ body {
 }
 
 .websiteTitleHeader {
-  font-family: 'Ailerons', sans-serif;
+  font-family: "Ailerons", sans-serif;
   position: relative;
   width: 100%;
   font-weight: 600;
@@ -46,7 +119,7 @@ body {
 }
 
 .websiteTitleSubtext {
-  font-family: 'Ailerons', sans-serif;
+  font-family: "Ailerons", sans-serif;
   position: relative;
   width: 100%;
   font-weight: 600;
@@ -59,7 +132,7 @@ body {
 .Landing {
   z-index: 35;
   background-size: cover;
-  background-color: #FAF9F6;
+  background-color: #faf9f6;
   margin: 0 !important;
 }
 
@@ -113,7 +186,6 @@ body {
   padding: 0.125rem 0.125rem;
   transition: all 0.2s ease-in-out;
   padding: 10px;
-
 }
 
 .conditionalText {
@@ -129,19 +201,19 @@ body {
 }
 
 .SectionHeading {
-  font-family: 'Ailerons', sans-serif;
+  font-family: "Ailerons", sans-serif;
   font-size: 40px;
   font-weight: bolder;
   text-decoration: underline;
   color: #111924;
   text-align: center;
-  margin:auto
+  margin: auto;
 }
 
 .banner {
   background-color: rgba(17, 25, 36, 0.5);
   border-radius: 6px;
-  color: #FAF9F6;
+  color: #faf9f6;
   font-weight: bold;
   font-size: 20px;
   padding: 10px;
@@ -161,7 +233,6 @@ body {
 .ExperienceContainer {
   flex: 2;
   padding-left: 50px;
-
 }
 
 .LinksContainer {
