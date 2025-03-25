@@ -117,7 +117,12 @@
     <div class="center" style="flex:1;font-size:larger;padding-left: 50px;padding-right: 50px;"> 
       To the left is the architecture of the SPARCC 3.0 system. The four main subsystems are Structures, Propellant, Controls, and Mechanism. <br> <br>
       My personal responsibilities in this design were ensuring each subsystem was integrated and worked together. I also worked in a limited capacity in each subsystem, mainly controls and propellant. <br> <br>
-      The components that were the most problematic were the controls hardware, valve, and nozzle.
+      The components that were the most problematic were the controls hardware, valve, and nozzle.<br><br>
+      This page details the four most prominent responsibilities I had in the project: <br>
+        <strong>Finding Pressure and Temperature of Combustion</strong> <br>
+        <strong>Technical Budgets</strong> <br>
+        <strong>Valve Research</strong> <br>
+        <strong>ANSYS FLUENT Nozzle CFD Analysis</strong> <br>
     </div>
   </div>
 
@@ -149,11 +154,58 @@
         <img src="/images/SPARCCThrustTest.jpg" style="width:600px; border-radius: 15px; height: 400px; margin: auto;">
         <figcaption class="center" style="color: rgb(0, 0, 0);font-weight: bold;">SPARCC 3.0 Thermal Test</figcaption>
         </figure>
+
+        <figure>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/A4VKpmjXuEQ?si=2prC6YopxPA-5aFB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <figcaption class="center" style="color: rgb(0, 0, 0);font-weight: bold;">SPARCC 3.0 Thermal Test Video</figcaption>
+        </figure>
+        
+
     </div>
   </div>
 
   <div class="SectionHeading"> 
-    Responsibility 2 - Valve Research
+    Responsibility 2 - Technical Budgets
+  </div>
+
+  <div class="flexContainer">
+    <div>
+    <div class="center" style="flex:1;font-size:larger;padding-left: 50px;padding-right: 50px;"> 
+      SPARCC 3.0 is constrained by three main budgets: mass, power, and volume. <br>
+      These budgets were set via a trade study done during the SRR phase of the project. <br>
+      Through each milestone of the capstone project (SRR, PDR, CDR, Showcase), these budgets are predicted to change through the development process. <br><br>
+    </div>  
+
+    <ul style="font-size: larger;padding-right: 20px;">
+      <li style="font-weight: bold;">
+          <a class="highlight-link" href="https://arc.aiaa.org/doi/book/10.2514/4.103858" target="_blank" rel="noopener noreferrer">AIAA Standard S-120</a>  
+      </li>
+      <div style="margin-left: 40px;"> The bulk of my work on the technical budgets was to predict how the specifications of the current design at a given milestone will change over time. <br> This was done in accordance with AIAA Standard S-120, "American National Standard Mass Properties Control for Space Systems". This standard defines a "Mass Growth Analysis" which is used to define the growth of properties through the development process. </div>
+        <li style="font-weight: bold;"> Mass Budget:  </li>
+        <div style="margin-left: 40px;"> As shown on the right, six different alternatives were compared, and the average wet mass of the systems is about 6 kg. This is the maximum 'Mass Limit' that the system is allowed to reach.
+          <br> The Allowable Mass is set to be 5.5 kg, which provides a 0.5 kg 'mass reserve', which is a last resort reserve to ensure the 6 kg limit is not reached.<br> Additionally, there is a Mass Growth Allowance (MGA) which is added to the current design's mass, which is a function of what the design is comprised of and how far along in the design process it is. </div>
+          <li style="font-weight: bold;"> Power: </li>
+          <div style="margin-left: 40px;">  The SPARCC 3.0 system must, in any power/operation mode, not not exceed a power usage of 12 Watts. This is on the low end of the trade study, shown on the right. This also follows the AIAA S-120 standard. </div>
+          <li style="font-weight: bold;"> Volume Budget: </li>
+        <div style="margin-left: 40px;"> The volume the entire system must take up must stay within a 2 U (20x10x10 cm) volume, with some exceptions to test stand considerations. This does not follow the AIAA S-120 standard, as it is a unique requirement of the project which requires creative placement of components.
+        </div>
+
+      </ul>
+    </div>
+    <div class="center" style="flex:1">
+      <figure>
+        <img src="/images/TradeStudy.png" style="width:600px; border-radius: 15px; height: 250px; margin: auto;">
+        <figcaption class="center" style="color: rgb(0, 0, 0);font-weight: bold;">Cubesat Propulsion Modules Trade Study </figcaption>
+        </figure>
+        <figure>
+          <img src="/images/MGA.png" style="width:300px; border-radius: 15px; height: 500px; margin: auto;">
+          <figcaption class="center" style="color: rgb(0, 0, 0);font-weight: bold;">AIAA S-120 Mass Growth Analysis </figcaption>
+          </figure>
+    </div>
+  </div>
+
+  <div class="SectionHeading"> 
+    Responsibility 3 - Valve Research
   </div>
 
   <div class="flexContainer">
@@ -184,14 +236,18 @@
     </div>
     <div class="center" style="flex:1">
       <figure>
-        <img src="/images/BallValve.jpg" style="width:600px; border-radius: 15px; height: 600px; margin: auto;">
+        <img src="/images/Solenoid.jpeg" style="width:400px; border-radius: 15px; height: 300px; margin: auto;">
+        <figcaption class="center" style="color: rgb(0, 0, 0);font-weight: bold;">Solenoid Valve Diagram </figcaption>
+        </figure>
+      <figure>
+        <img src="/images/BallValve.jpg" style="width:300px; border-radius: 15px; height: 300px; margin: auto;">
         <figcaption class="center" style="color: rgb(0, 0, 0);font-weight: bold;">US Solid Stainless Steel Ball Valve 1/4" NPT </figcaption>
         </figure>
     </div>
   </div>
 
   <div class="SectionHeading"> 
-    Responsibility 3 - ANSYS FLUENT Nozzle CFD Analysis
+    Responsibility 4 - ANSYS FLUENT Nozzle CFD Analysis
   </div>
 
   <div class="flexContainer">
@@ -218,6 +274,15 @@
       </ul>
     </div>
   </div>
+  <div style="padding-top: 75px;"></div>
+  <div class="flexContainer">
+    <div class="center" style="flex:1;font-size:larger;padding-left: 50px;padding-right: 50px;"> 
+      In part of the testing campaign of SPARCC 3.0, a scaled-down thrust test was conducted. This test included an analytical CFD value for thrust to be found. <br>
+      This analytical value will be compared against the experimental values to verify the test results. <br>
+      This analysis is being done and will be shown below once complete. <br><br>
+    </div>  
+
+
 
 </body>
 
