@@ -14,6 +14,7 @@ width: 100%;
 #menu {
 position: absolute;
 font-family: 'Ailerons', sans-serif;
+height:fit-content;
 background: linear-gradient(to top, #4d4175, #726b91);
 color: rgb(102, 102, 102);
 border-radius: 6px;
