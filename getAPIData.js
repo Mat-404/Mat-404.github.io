@@ -27,7 +27,7 @@ $(document).ready(function () {
       statusHTML += '</tr>';
     });
     $('#gitHubReposTableBody').parent().css('color', 'aliceblue');
-    $('#gitHubReposTableBody').parent().css('background-color', '#0a0730');
+    $('#gitHubReposTableBody').parent().css('background-color', '#0a68c0');
     $('#gitHubReposTableBody').html(statusHTML);
   }
 
@@ -49,10 +49,14 @@ $(document).ready(function () {
       string = item.quicktext;
       url = string.match(regex)[0];
       statusHTML += '<tr>';
-      statusHTML += '<td>' + '<a href=' + url + ' target="_blank" rel="noopener noreferrer">' + item.name + '</a>' + '</td>';
+      statusHTML += '<td>' + '<a class="rocket-link" href=' + url + ' target="_blank" rel="noopener noreferrer">' + item.name + '</a>' + '</td>';
       statusHTML += '<td>' + item.provider.name + '</td>';
       statusHTML += '<td>' + item.pad.name + '<br>' + item.pad.location.country + '</td>';
+      if (String(item.pad.location.state) != "null"){
       statusHTML += '<td class="stateLocation">' + String(item.pad.location.state) + '</td>';
+      } else {
+      statusHTML += '<td class="stateLocation">' + 'N/A' + '</td>';
+      }
       statusHTML += '<td>' + formattedDate + '</td>';
       statusHTML += '</tr>';
     }
@@ -66,11 +70,11 @@ $(document).ready(function () {
     function highlightFloridaLaunches() {
       $('.table td:nth-child(4)').each(function () {
         if ($(this).text() == 'FL') {
-          $(this).parent().css('background-color', '#5d5096');
+          $(this).parent().css('background-color', '#3985cc');
           $(this).parent().css('color', 'aliceblue');
           $(this).parent().css('font-weight', 'bold');
         } else {
-          $(this).parent().css('background-color', '#4d4175');
+          $(this).parent().css('background-color', '#0a68c0');
           $(this).parent().css('color', 'aliceblue');
         }
       });
