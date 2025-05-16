@@ -42,55 +42,65 @@
     <span class="loader"><span class="loader-inner"></span></span>
   </div>
 
-  <!--Title and Blurb-->
-  <div class="flexContainer">
+  <div class="flexContainer headerBar">
 
-    <div class="verticalFlexContainer1">
+    <!-- Title -->
+    <div class="titleContainer">
       <div class="websiteTitleHeader">
         Mathieu Cote
       </div>
-      <div class="websiteTitleSubtext">
-        Aerospace Engineering Student
-      </div>
     </div>
-
-    <div style="flex:1;margin-right:20px; padding-top: 25px;">
-      <div style="color: #FAF9F6;font-size: 30px;">
+  
+    <!-- Menu -->
+    <div class="menuContainer">
+      <nav id="menu">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/OrbitSim.html">Orbit Simulation</a></li>
+          <li><a href="/modeling.html">3D Modeling Projects</a></li>
+          <li><a href="/RocketSim.html">Rocket Simulation</a></li>
+          <li><a href="/SolidPropulsion.html">Senior Design</a></li>
+        </ul>
+      </nav>
+    </div>
+  
+    <!-- Links -->
+    <div class="linksContainer">
+      <div class="socialLinks">
         <p>
           <strong>All my links:</strong>
-          <a class="highlight-link" href="https://github.com/Mat-404" target="_blank" rel="noopener noreferrer">
-            Github
-          </a>
-          <a class="highlight-link" href="https://www.linkedin.com/in/mathieu-cote-08860621b/" target="_blank"
-            rel="noopener noreferrer">
-            LinkedIn
-          </a>
-          <a class="highlight-link" href="https://www.youtube.com/@mathieucote6707" target="_blank"
-            rel="noopener noreferrer">
-            YouTube
-          </a>
+          <a class="highlight-link" href="https://github.com/Mat-404" target="_blank">Github</a>
+          <a class="highlight-link" href="https://www.linkedin.com/in/mathieu-cote-08860621b/" target="_blank">LinkedIn</a>
+          <a class="highlight-link" href="https://www.youtube.com/@mathieucote6707" target="_blank">YouTube</a>
         </p>
       </div>
     </div>
-
+  
   </div>
 
-  <!--Not really the landing, but button row, may wish to redesign-->
-  <div class="Landing">
-    <nav id='menu'>
-      <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
-      <ul>
-        <li><a href='/index.html'>Home</a></li>
-        <li><a href='/OrbitSim.html'>Orbit Simulation</a></li>
-        <li><a href='/modeling.html'>3D Modeling Projects</a></li>
-        <li><a href='/RocketSim.html'>Rocket Simulation</a></li>
-        <li><a href='/SolidPropulsion.html'>Senior Design</a></li>
-      </ul>
-    </nav>
+<div style="margin-top: 40px; margin-bottom:40px;">
+  <h2 class="center" style="color: rgb(11, 38, 61);">
+    <u>SPARCC 3.0 Project - 2024/2025</u>
+  </h2>
+  <div class="banner">
+     As a part of my <a href="/SolidPropulsion.html"> senior design project</a>, I did a majority of the 3D modeling and assembly of components. For this project, we used PTC Onshape.
+     Onshape is made by PTC, which also developed CREO. The main driver behind this choice was the ease of editing on the cloud as a team. Some components such as the combustion chamber and loader
+     were entirely designed by the leads of their respective subsystems, so I was in charge of the assembly and modeling of additional components the team forgot such as baseplates and electronics.
   </div>
+  <div class="table-wrap">
+    <figure>
+    <img src="/images/SystemOnshape.jpg" style="width:100%; border-radius: 15px; height: 50%; margin: auto;">
+    <figcaption class="center" style="color: rgb(37, 37, 37);">Full system model in Onshape</figcaption>
+    </figure>
+    <figure>
+      <img src="/images/S3CAD_Cutaway.png" style="width:100%; border-radius: 15px; height: 50%; margin: auto;">
+      <figcaption class="center" style="color: rgb(37, 37, 37);">Section View for the Sparcc 3.0 system</figcaption>
+      </figure>
+  </div>
+</div>
 
-<div style="margin-top: 80px; margin-bottom:40px;">
-  <h2 class="center" style="color: white">
+<div style="margin-top: 40px; margin-bottom:40px;">
+  <h2 class="center" style="color: rgb(11, 38, 61);">
     <u>Cat Feeder Project - 2024</u>
   </h2>
   <div class="banner">
@@ -103,20 +113,20 @@
   <div class="table-wrap">
     <figure>
     <img src="/images/WaterDispenser.jpg" style="width:100%; border-radius: 15px; height: 50%; margin: auto;">
-    <figcaption class="center" style="color: white;">Initial off-the-shelf water dispenser</figcaption>
+    <figcaption class="center" style="color: rgb(37, 37, 37);">Initial off-the-shelf water dispenser</figcaption>
     </figure>
     <figure>
       <img src="/images/Simulation.png" style="width:100%; border-radius: 15px; height: 50%; margin: auto;">
-      <figcaption class="center" style="color: white;">Modeled Design in Fusion 360 - Analysis results for displacement</figcaption>
+      <figcaption class="center" style="color: rgb(37, 37, 37);">Modeled Design in Fusion 360 - Analysis results for displacement</figcaption>
       </figure>
     <figure>
       <img src="/images/ModifiedDispenser.jpg" style="width:100%; border-radius: 15px; height: 50%; margin: auto;">
-      <figcaption class="center" style="color: white;">Feeder with adapter installed</figcaption>
+      <figcaption class="center" style="color: rgb(37, 37, 37);">Feeder with adapter installed</figcaption>
       </figure>
   </div>
 </div>
 
-<h2 class="center" style="color: white;">
+<h2 class="center" style="color: rgb(11, 38, 61);;">
   <u>Projector Mount - 2023</u>
 </h2>
 <div class="banner">
@@ -126,15 +136,15 @@
 <div class="table-wrap">
   <figure>
     <img src="/images/ProjectorMountDrawing.png" style="width:100%; border-radius: 15px; height: auto;">
-    <figcaption class="center" style="color: white;">CAD Drawing of the mount</figcaption>
+    <figcaption class="center" style="color: rgb(37, 37, 37);">CAD Drawing of the mount</figcaption>
   </figure>
   <figure>
     <img src="/images/Projector.jpg" style="width:83%; border-radius: 15px; height: auto;">
-    <figcaption class="center" style="color: white;">Image of the mount holding the projector</figcaption>
+    <figcaption class="center" style="color: rgb(37, 37, 37);">Image of the mount holding the projector</figcaption>
   </figure>
 </div>
 
-  <h2 class="center" style="color: white;">
+  <h2 class="center" style="color: rgb(11, 38, 61);;">
     <u>Rocketry Club - 2023</u>
   </h2>
   <div class="banner">
@@ -151,43 +161,43 @@
   <div class="table-wrap">
     <figure>
       <img src="/images/RocketryModels/RocketryClubImg1.png" style="width:100%; border-radius: 15px; height: auto;">
-      <figcaption class="center" style="color: white;">Initial Rocket Idea render in NX - Short and Stumpy</figcaption>
+      <figcaption class="center" style="color: rgb(37, 37, 37);">Initial Rocket Idea render in NX - Short and Stumpy</figcaption>
     </figure>
     <figure>
       <img src="/images/RocketryModels/ThrustCan v16.png" style="width:100%; border-radius: 15px; height: auto;">
-      <figcaption class="center" style="color: white;">Thrust can model for final Stormchaser Assembly</figcaption>
+      <figcaption class="center" style="color: rgb(37, 37, 37);">Thrust can model for final Stormchaser Assembly</figcaption>
     </figure>
   </div>
   <div class="table-wrap">
     <figure>
       <img src="/images/RocketryModels/Aeropack KadinDev v18.png"
         style="width:100%; border-radius: 15px; height: auto;">
-      <figcaption class="center" style="color: white;">Aeropack model to hold engine inside of thrust can</figcaption>
+      <figcaption class="center" style="color: rgb(37, 37, 37);">Aeropack model to hold engine inside of thrust can</figcaption>
     </figure>
     <figure>
       <img src="/images/RocketryModels/NoseConeWholeV2 v1.png" style="width:100%; border-radius: 15px; height: auto;">
-      <figcaption class="center" style="color: white;">Nose cone model for to hold bulkhead and payload</figcaption>
+      <figcaption class="center" style="color: rgb(37, 37, 37);">Nose cone model for to hold bulkhead and payload</figcaption>
     </figure>
   </div>
   <div class="table-wrap">
     <figure>
       <img src="/images/RocketryModels/NoseConeCap v13.png" style="width:100%; border-radius: 15px; height: auto;">
-      <figcaption class="center" style="color: white;">Nosecone bulkhead to which an eye hook is attached for the
+      <figcaption class="center" style="color: rgb(37, 37, 37);">Nosecone bulkhead to which an eye hook is attached for the
         parachute</figcaption>
     </figure>
     <figure>
       <img src="/images/RocketryModels/Assembly 2 v12.png" style="width:100%; border-radius: 15px; height: auto;">
-      <figcaption class="center" style="color: white;">Total Assembly for Stormchaser</figcaption>
+      <figcaption class="center" style="color: rgb(37, 37, 37);">Total Assembly for Stormchaser</figcaption>
     </figure>
   </div>
   <div class="table-wrap">
     <figure>
       <img src="/images/RocketryModels/Stormchaser 1.jpg" style="width:100%; border-radius: 15px; height: auto;">
-      <figcaption class="center" style="color: white;">Stormchaser assembled and on the launch stand</figcaption>
+      <figcaption class="center" style="color: rgb(37, 37, 37);">Stormchaser assembled and on the launch stand</figcaption>
     </figure>
     <figure>
       <img src="/images/RocketryModels/Stormchaser 2.jpg" style="width:100%; border-radius: 15px; height: auto;">
-      <figcaption class="center" style="color: white;">Stormchaser immediately after ignition</figcaption>
+      <figcaption class="center" style="color: rgb(37, 37, 37);">Stormchaser immediately after ignition</figcaption>
     </figure>
   </div>
 
@@ -215,10 +225,10 @@
       <script src="slideshow.js"></script>
     </div>
     <div class="stream-container">
-      <h1 class="center" style="color: white;">
+      <h1 class="center" style="color: rgb(11, 38, 61);;">
         Siemens NX Modeling - 2022
       </h1>
-      <h2 class="center" style="color: white;">
+      <h2 class="center" style="color: rgb(11, 38, 61);;">
         <u>Video-guided practice</u>
       </h2>
       <div class="banner">
@@ -238,7 +248,7 @@
     </div>
   </div>
 
-  <h2 class="center" style="color: white;">
+  <h2 class="center" style="color: rgb(11, 38, 61);;">
     <u>Arduino Uno Case - 2022</u>
   </h2>
   <div class="banner">
